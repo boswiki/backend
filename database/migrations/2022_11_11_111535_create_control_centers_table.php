@@ -11,8 +11,7 @@ return new class extends Migration
         Schema::create('control_centers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->decimal('latitude', 10, 8);
-            $table->decimal('longitude', 10, 8);
+            $table->point('location', 4326);
             $table->foreignIdFor(\App\Models\Address::class)->constrained();
             $table->timestamps();
         });
