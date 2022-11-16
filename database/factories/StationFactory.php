@@ -27,7 +27,8 @@ class StationFactory extends Factory
             'location' => DB::raw('ST_SRID(Point('.fake()->longitude().', '.fake()->latitude().'), 4326)'),
             'user_id' => User::factory(),
             'station_type_id' => StationType::factory(),
-            'district_id' => District::factory()
+            'district_id' => District::factory(),
+            'address_id' => Address::factory()
         ];
     }
 }
