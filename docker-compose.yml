@@ -1,35 +1,72 @@
 version: "3.8"
 
 services:
-    pgsql:
-        container_name: bos.wiki-pgsql
-        image: postgis/postgis:latest
+    mysql:
+        container_name: bw-mysql
+        image: mysql
+        networks:
+            - web
         environment:
-            - POSTGRES_DB=${DB_DATABASE}
-            - POSTGRES_USER=${DB_USERNAME}
-            - POSTGRES_PASSWORD=${DB_PASSWORD}
+            MYSQL_ROOT_PASSWORD: test123
+            MYSQL_DATABASE: laravel
         ports:
-            - "5432:5432"
+            - "3306:3306"
 
     redis:
-        container_name: bos.wiki-redis
+        container_name: bw-redis
         image: redis
+        networks:
+            - web
         ports:
             - "6382:6379"
 
     nginx:
-        container_name: bos.wiki-nginx
+        container_name: bw-nginx
         image: nginx
-        working_dir: /www
-        ports:
-            - "80:80"
+        working_dir: /var/www/app
+        labels:
+            # This is enableing treafik to proxy this service
+            - "traefik.enable=true"
+            # Here we have to define the URL
+            - "traefik.http.routers.bw-backend.rule=Host(`api.boswiki.localhost`)"
+            # Here we are defining wich entrypoint should be used by clients to access this service
+            - "traefik.http.routers.bw-backend.entrypoints=web"
+            # Here we define in wich network treafik can find this service
+            - "traefik.docker.network=web"
+            # This is the port that traefik should proxy
+            - "traefik.http.services.bw-backend.loadbalancer.server.port=80"
+        networks:
+            - web
         volumes:
             - ./site.conf:/etc/nginx/conf.d/default.conf
-            - ./:/www:delegated
+            - ./:/var/www/app:delegated
     php:
-        container_name: bow.wiki-php
-        build: .
-        working_dir: /www
+        container_name: bw-php
+        image: misterio92/laravel:8.1-fpm
+        networks:
+            - web
+        working_dir: /var/www/app
         volumes:
-            - ./:/www:delegated
+            - ./:/var/www/app:delegated
             - ./php.ini:/usr/local/etc/php/php.ini
+    traefik:
+        container_name: bw-traefik
+        image: traefik:v2.9
+        command:
+            - "--log.level=DEBUG"
+            - "--api.insecure=true"
+            - "--providers.docker=true"
+            - "--providers.docker.exposedbydefault=false"
+            - "--entrypoints.web.address=:80"
+        restart: always
+        ports:
+            - "80:80"
+            - "8080:8080" # The Web UI (enabled by --api)
+        networks:
+            - web
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+    web:
+        external: true
