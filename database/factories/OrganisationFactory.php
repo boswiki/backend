@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Address;
 use App\Models\Category;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -23,7 +24,8 @@ class OrganisationFactory extends Factory
             'website' => fake()->url(),
             'abbreviation' => fake()->name(),
             'user_id' => User::factory(),
-            'category_id' => Category::factory()
+            'category_id' => Category::factory(),
+            'address_id' => Address::factory()
         ];
     }
 }

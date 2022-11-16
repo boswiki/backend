@@ -21,6 +21,7 @@ class ControlCenterFactory extends Factory
         return [
             'name' => fake()->company(),
             'location' => DB::raw('ST_SRID(Point('.fake()->longitude().', '.fake()->latitude().'), 4326)'),
+            'address_id' => Address::factory()
         ];
     }
 }
