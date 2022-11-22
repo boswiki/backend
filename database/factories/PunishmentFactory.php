@@ -2,11 +2,11 @@
 
 namespace Database\Factories;
 
-use App\Models\User;
+use App\Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Punishment>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Domain\Users\Models\Punishment>
  */
 class PunishmentFactory extends Factory
 {

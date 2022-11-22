@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->point('location', 4326);
-            $table->foreignIdFor(\App\Models\Address::class)->constrained();
+            $table->foreignIdFor(\App\Domain\Common\Models\Address::class)->constrained();
             $table->timestamps();
         });
     }

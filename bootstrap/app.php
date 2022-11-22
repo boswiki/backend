@@ -11,9 +11,13 @@
 |
 */
 
-$app = new Illuminate\Foundation\Application(
+use App\Application;
+
+$app = new Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
+
+$app->useAppPath('src/App');
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +32,7 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    App\Http\Kernel::class
+    App\Kernel::class
 );
 
 $app->singleton(

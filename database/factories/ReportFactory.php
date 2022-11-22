@@ -2,13 +2,13 @@
 
 namespace Database\Factories;
 
-use App\Models\Station;
-use App\Models\User;
-use App\Models\Vehicle;
+use App\Domain\Stations\Models\Station;
+use App\Domain\Users\Models\User;
+use App\Domain\Vehicles\Models\Vehicle;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Report>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Domain\Common\Models\Report>
  */
 class ReportFactory extends Factory
 {

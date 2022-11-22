@@ -2,16 +2,16 @@
 
 namespace Database\Factories;
 
-use App\Models\Category;
-use App\Models\Organisation;
-use App\Models\User;
-use App\Models\VehicleFitter;
-use App\Models\VehicleManufacturer;
-use App\Models\VehicleType;
+use App\Domain\Common\Models\Category;
+use App\Domain\Common\Models\Organisation;
+use App\Domain\Users\Models\User;
+use App\Domain\Vehicles\Models\VehicleFitter;
+use App\Domain\Vehicles\Models\VehicleManufacturer;
+use App\Domain\Vehicles\Models\VehicleType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Vehicle>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Domain\Vehicles\Models\Vehicle>
  */
 class VehicleFactory extends Factory
 {

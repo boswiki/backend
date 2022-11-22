@@ -10,8 +10,8 @@ return new class extends Migration
     {
         Schema::create('district_user', function (Blueprint $table) {
             $table->primary(['district_id', 'user_id']);
-            $table->foreignIdFor(\App\Models\District::class)->constrained();
-            $table->foreignIdFor(\App\Models\User::class)->constrained();
+            $table->foreignIdFor(\App\Domain\Stations\Models\District::class)->constrained();
+            $table->foreignIdFor(\App\Domain\Users\Models\User::class)->constrained();
             $table->timestamps();
         });
     }

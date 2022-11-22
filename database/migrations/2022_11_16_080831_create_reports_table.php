@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id();
             $table->text('content');
             $table->morphs('reportable');
-            $table->foreignIdFor(\App\Models\User::class);
+            $table->foreignIdFor(\App\Domain\Users\Models\User::class);
             $table->timestamps();
         });
     }

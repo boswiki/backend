@@ -2,12 +2,12 @@
 
 namespace Database\Factories;
 
-use App\Enums\Feedback;
-use App\Models\User;
+use App\Domain\Feedbacks\Enums\Feedback;
+use App\Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Feedback>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Domain\Feedbacks\Models\Feedback>
  */
 class FeedbackFactory extends Factory
 {

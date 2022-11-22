@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->morphs('favoriteable');
 
-            $table->foreignIdFor(\App\Models\User::class)->constrained();
+            $table->foreignIdFor(\App\Domain\Users\Models\User::class)->constrained();
 
             $table->timestamps();
         });

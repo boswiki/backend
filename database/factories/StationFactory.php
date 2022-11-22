@@ -2,15 +2,15 @@
 
 namespace Database\Factories;
 
-use App\Models\Address;
-use App\Models\District;
-use App\Models\StationType;
-use App\Models\User;
+use App\Domain\Common\Models\Address;
+use App\Domain\Stations\Models\District;
+use App\Domain\Stations\Models\StationType;
+use App\Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\DB;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Station>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Domain\Stations\Models\Station>
  */
 class StationFactory extends Factory
 {
