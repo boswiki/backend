@@ -15,10 +15,10 @@ return new class extends Migration
             $table->json('description');
             $table->point('location', 4326);
 
-            $table->foreignIdFor(\App\Models\Address::class)->constrained();
-            $table->foreignIdFor(\App\Models\User::class)->constrained();
-            $table->foreignIdFor(\App\Models\StationType::class)->constrained();
-            $table->foreignIdFor(\App\Models\District::class)->constrained();
+            $table->foreignIdFor(\App\Domain\Common\Models\Address::class)->constrained();
+            $table->foreignIdFor(\App\Domain\Users\Models\User::class)->constrained();
+            $table->foreignIdFor(\App\Domain\Stations\Models\StationType::class)->constrained();
+            $table->foreignIdFor(\App\Domain\Stations\Models\District::class)->constrained();
 
             $table->timestamps();
         });

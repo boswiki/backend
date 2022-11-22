@@ -2,12 +2,12 @@
 
 namespace Database\Factories;
 
-use App\Models\District;
-use App\Models\User;
+use App\Domain\Stations\Models\District;
+use App\Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\StationUser>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Domain\Stations\Models\StationUser>
  */
 class DistrictUserFactory extends Factory
 {

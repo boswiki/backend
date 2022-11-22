@@ -2,12 +2,12 @@
 
 namespace Database\Factories;
 
-use App\Models\Address;
+use App\Domain\Common\Models\Address;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\DB;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\ControlCenter>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Domain\Stations\Models\ControlCenter>
  */
 class ControlCenterFactory extends Factory
 {
