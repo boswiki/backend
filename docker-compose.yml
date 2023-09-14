@@ -42,7 +42,7 @@ services:
             - ./:/var/www/app:delegated
     php:
         container_name: bw-php
-        image: misterio92/laravel:8.1-fpm
+        image: misterio92/laravel:8.2-fpm
         networks:
             - web
         working_dir: /var/www/app
