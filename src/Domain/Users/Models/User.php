@@ -4,7 +4,7 @@ namespace App\Domain\Users\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Domain\Common\Models\Favorite;
-use App\Domain\Feedbacks\Models\Feedback;
+use App\Domain\Feedback\Models\Feedback;
 use App\Domain\Points\Models\Point;
 use App\Domain\Stations\Models\District;
 use App\Domain\Stations\Models\DistrictUser;
@@ -68,7 +68,7 @@ class User extends Authenticatable
         return $this->hasMany(Point::class);
     }
 
-    public function feedbacks(): HasMany
+    public function feedback(): HasMany
     {
         return $this->hasMany(Feedback::class);
     }
