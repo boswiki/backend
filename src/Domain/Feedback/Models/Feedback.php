@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\Feedbacks\Models;
+namespace App\Domain\Feedback\Models;
 
 use App\Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

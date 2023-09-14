@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\Feedbacks\Enums;
+namespace App\Domain\Feedback\Enums;
 
 enum Feedback: string
 {
