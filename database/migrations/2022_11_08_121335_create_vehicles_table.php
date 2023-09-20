@@ -17,15 +17,15 @@ return new class extends Migration
             $table->date('decommissioning_date');
             $table->tinyInteger('crew_count');
 
-            $table->foreignIdFor(\App\Domain\Common\Models\Category::class)->constrained();
-            $table->foreignIdFor(\App\Domain\Common\Models\Organisation::class)->constrained();
-            $table->foreignIdFor(\App\Domain\Users\Models\User::class)->constrained();
-            $table->foreignIdFor(\App\Domain\Vehicles\Models\VehicleManufacturer::class)->constrained();
+            $table->foreignIdFor(\Domain\Common\Models\Category::class)->constrained();
+            $table->foreignIdFor(\Domain\Common\Models\Organisation::class)->constrained();
+            $table->foreignIdFor(\Domain\Users\Models\User::class)->constrained();
+            $table->foreignIdFor(\Domain\Vehicles\Models\VehicleManufacturer::class)->constrained();
 
             $table->foreignId('vehicle_type_id')->constrained('vehicle_types');
             $table->foreignId('vehicle_subtype_id')->nullable()->constrained('vehicle_types');
 
-            $table->foreignIdFor(\App\Domain\Vehicles\Models\VehicleFitter::class)->nullable()->constrained();
+            $table->foreignIdFor(\Domain\Vehicles\Models\VehicleFitter::class)->nullable()->constrained();
 
             $table->timestamps();
         });

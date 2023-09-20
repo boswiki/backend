@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->json('description');
-            $table->foreignIdFor(\App\Domain\Common\Models\Category::class)->constrained();
+            $table->foreignIdFor(\Domain\Common\Models\Category::class)->constrained();
             $table->timestamps();
         });
     }

@@ -11,9 +11,10 @@ return new class extends Migration
         Schema::create('addresses', function (Blueprint $table) {
             $table->id();
             $table->string('street');
-            $table->smallInteger('number');
-            $table->smallInteger('zip');
+            $table->string('number', 10);
+            $table->string('zip', 10);
             $table->string('county');
+            $table->string('city');
             $table->string('country');
             $table->morphs('addressable');
             $table->timestamps();

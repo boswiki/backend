@@ -1,5 +1,7 @@
 <?php
 
+use Domain\Feedback\Enums\Feedback;
+use Domain\Users\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,12 +14,12 @@ return new class extends Migration
             $table->id();
             $table->text('content');
             $table->enum('type', [
-                \App\Enums\Feedback::BUG->value,
-                \App\Enums\Feedback::IDEA->value,
-                \App\Enums\Feedback::PRAISE->value,
-                \App\Enums\Feedback::OTHER->value,
+                Feedback::BUG->value,
+                Feedback::IDEA->value,
+                Feedback::PRAISE->value,
+                Feedback::OTHER->value,
             ]);
-            $table->foreignIdFor(\App\Models\User::class)->constrained();
+            $table->foreignIdFor(User::class)->constrained();
             $table->timestamps();
         });
     }
