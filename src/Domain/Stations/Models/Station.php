@@ -1,14 +1,15 @@
 <?php
 
-namespace App\Domain\Stations\Models;
+namespace Domain\Stations\Models;
 
-use App\Domain\Common\Concerns\HasAddresses;
-use App\Domain\Common\Models\Category;
-use App\Domain\Common\Models\Favorite;
-use App\Domain\Common\Models\Organisation;
-use App\Domain\Common\Models\Report;
-use App\Domain\Users\Models\User;
-use App\Domain\Vehicles\Models\Vehicle;
+use Database\Factories\StationFactory;
+use Domain\Common\Concerns\HasAddresses;
+use Domain\Common\Models\Category;
+use Domain\Common\Models\Favorite;
+use Domain\Common\Models\Organisation;
+use Domain\Common\Models\Report;
+use Domain\Users\Models\User;
+use Domain\Vehicles\Models\Vehicle;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -19,6 +20,20 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
 class Station extends Model
 {
     use HasFactory, HasAddresses;
+
+    protected $casts = [
+        'created_at' => 'date'
+    ];
+
+    public function getRouteKeyName()
+    {
+        return 'uuid';
+    }
+
+    protected static function newFactory()
+    {
+        return StationFactory::new();
+    }
 
     public function category(): BelongsTo
     {
@@ -37,7 +52,7 @@ class Station extends Model
 
     public function favorites(): MorphMany
     {
-        return $this->morphMany(Favorite::class, 'favoriteable');
+        return $this->morphMany(Favorite::class, 'favorable');
     }
 
     public function organisation(): BelongsTo

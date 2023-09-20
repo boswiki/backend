@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Domain\Common\Models;
+namespace Domain\Common\Models;
 
-use App\Domain\Common\Concerns\HasAddresses;
-use App\Domain\Stations\Models\Station;
-use App\Domain\Users\Models\User;
-use App\Domain\Vehicles\Models\Vehicle;
+use Database\Factories\OrganisationFactory;
+use Domain\Common\Concerns\HasAddresses;
+use Domain\Stations\Models\Station;
+use Domain\Users\Models\User;
+use Domain\Vehicles\Models\Vehicle;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -14,6 +15,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Organisation extends Model
 {
     use HasFactory, HasAddresses;
+
+    protected static function newFactory()
+    {
+        return OrganisationFactory::new();
+    }
 
     public function category(): BelongsTo
     {

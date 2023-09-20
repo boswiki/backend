@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Domain\Stations\Models;
+namespace Domain\Stations\Models;
 
-use App\Domain\Users\Models\User;
+use Database\Factories\DistrictFactory;
+use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -11,6 +12,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class District extends Model
 {
     use HasFactory;
+
+    protected static function newFactory()
+    {
+        return DistrictFactory::new();
+    }
 
     public function stations(): HasMany
     {

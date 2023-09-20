@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Domain\Common\Models;
+namespace Domain\Common\Models;
 
-use App\Domain\Users\Models\User;
+use Database\Factories\FavoriteFactory;
+use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -12,7 +13,12 @@ class Favorite extends Model
 {
     use HasFactory;
 
-    public function favoriteable(): MorphTo
+    protected static function newFactory()
+    {
+        return FavoriteFactory::new();
+    }
+
+    public function favorable(): MorphTo
     {
         return $this->morphTo();
     }

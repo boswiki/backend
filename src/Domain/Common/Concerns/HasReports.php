@@ -3,7 +3,7 @@
 namespace App\Concerns;
 
 
-use App\Domain\Common\Models\Report;
+use Domain\Common\Models\Report;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait HasReports

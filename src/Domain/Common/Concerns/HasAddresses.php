@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domain\Common\Concerns;
+namespace Domain\Common\Concerns;
 
-use App\Domain\Common\Models\Address;
+use Domain\Common\Models\Address;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 
 trait HasAddresses
