@@ -7,6 +7,7 @@ use Domain\Stations\Models\Station;
 use Domain\Users\Models\User;
 use Domain\Vehicles\Models\Vehicle;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Common\Models\Report>
@@ -31,6 +32,7 @@ class ReportFactory extends Factory
         $reportable = $this->reportable();
 
         return [
+            'uuid' => Str::uuid()->toString(),
             'content' => fake()->realText(),
             'user_id' => User::factory(),
             'reportable_id' => $reportable->factory(),

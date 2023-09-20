@@ -5,6 +5,7 @@ namespace Database\Factories;
 use Domain\Users\Models\Punishment;
 use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Users\Models\Punishment>
@@ -27,6 +28,7 @@ class PunishmentFactory extends Factory
     public function definition()
     {
         return [
+            'uuid' => Str::uuid()->toString(),
             'reason' => fake()->realText(),
             'expires_in' => fake()->date(),
             'user_id' => User::factory()

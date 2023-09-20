@@ -8,6 +8,7 @@ use Domain\Stations\Models\Station;
 use Domain\Users\Models\User;
 use Domain\Vehicles\Models\Vehicle;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Points\Models\Point>
@@ -32,6 +33,7 @@ class PointFactory extends Factory
         $commentable = $this->commentable();
 
         return [
+            'uuid' => Str::uuid()->toString(),
             'value' => fake()->randomNumber(3),
             'user_id' => User::factory(),
             'commentable_id' => $commentable::factory(),

@@ -5,6 +5,7 @@ namespace Database\Factories;
 use Domain\Feedback\Enums\Feedback;
 use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Feedback\Models\Feedback>
@@ -27,6 +28,7 @@ class FeedbackFactory extends Factory
     public function definition()
     {
         return [
+            'uuid' => Str::uuid()->toString(),
             'type' => fake()->randomElement([
                 Feedback::OTHER,
                 Feedback::IDEA,

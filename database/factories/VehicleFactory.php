@@ -10,6 +10,7 @@ use Domain\Vehicles\Models\VehicleFitter;
 use Domain\Vehicles\Models\VehicleManufacturer;
 use Domain\Vehicles\Models\VehicleType;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Vehicles\Models\Vehicle>
@@ -32,6 +33,7 @@ class VehicleFactory extends Factory
     public function definition()
     {
         return [
+            'uuid' => Str::uuid()->toString(),
             'name' => fake()->randomElement([
                 'Florian Freising 47/1',
                 'Florian München 1/42/1',

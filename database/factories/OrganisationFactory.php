@@ -7,6 +7,7 @@ use Domain\Common\Models\Category;
 use Domain\Common\Models\Organisation;
 use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Common\Models\Organisation>
@@ -29,6 +30,7 @@ class OrganisationFactory extends Factory
     public function definition()
     {
         return [
+            'uuid' => Str::uuid()->toString(),
             'name' => fake()->company(),
             'website' => fake()->url(),
             'abbreviation' => fake()->name(),

@@ -5,6 +5,7 @@ namespace Database\Factories;
 use Domain\Common\Models\Category;
 use Domain\Stations\Models\StationType;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Stations\Models\StationType>
@@ -27,6 +28,7 @@ class StationTypeFactory extends Factory
     public function definition()
     {
         return [
+            'uuid' => Str::uuid()->toString(),
             'name' => fake()->company(),
             'description' => '[]',
             'category_id' => Category::factory(),

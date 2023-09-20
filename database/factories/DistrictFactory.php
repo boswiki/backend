@@ -5,6 +5,7 @@ namespace Database\Factories;
 use Domain\Stations\Models\District;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Stations\Models\District>
@@ -27,6 +28,7 @@ class DistrictFactory extends Factory
     public function definition()
     {
         return [
+            'uuid' => Str::uuid()->toString(),
             'name' => fake()->country(),
             'bounding_box' => DB::raw('ST_PolygonFromText("POLYGON((10 10, 10 20, 20 20, 20 10, 10 10))")'),
             'border' => DB::raw('ST_PolygonFromText("POLYGON((10 10, 10 20, 20 20, 20 10, 10 10))")'),

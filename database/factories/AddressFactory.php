@@ -8,6 +8,7 @@ use Domain\Stations\Models\ControlCenter;
 use Domain\Stations\Models\District;
 use Domain\Stations\Models\Station;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Common\Models\Address>
@@ -37,6 +38,7 @@ class AddressFactory extends Factory
         ];
 
         return [
+            'uuid' => Str::uuid()->toString(),
             'street' => fake()->streetName(),
             'number' => fake()->randomNumber(2),
             'city' => fake()->city(),

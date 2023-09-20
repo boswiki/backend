@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use Domain\Vehicles\Models\VehicleFitter;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Vehicles\Models\VehicleManufacturer>
@@ -26,6 +27,7 @@ class VehicleFitterFactory extends Factory
     public function definition()
     {
         return [
+            'uuid' => Str::uuid()->toString(),
             'name' => fake()->company(),
             'street' => fake()->streetName(),
             'street_number' => fake()->randomNumber(1),

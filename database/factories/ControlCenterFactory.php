@@ -6,6 +6,7 @@ use Domain\Common\Models\Address;
 use Domain\Stations\Models\ControlCenter;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Stations\Models\ControlCenter>
@@ -28,6 +29,7 @@ class ControlCenterFactory extends Factory
     public function definition()
     {
         return [
+            'uuid' => Str::uuid()->toString(),
             'name' => fake()->company(),
             'location' => DB::raw('ST_SRID(Point('.fake()->longitude().', '.fake()->latitude().'), 4326)'),
             'address_id' => Address::factory()

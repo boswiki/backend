@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use Domain\Users\Models\Role;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Users\Models\Role>
@@ -26,6 +27,7 @@ class RoleFactory extends Factory
     public function definition()
     {
         return [
+            'uuid' => Str::uuid()->toString(),
             'name' => fake()->name(),
             'scopes' => '[]'
         ];
