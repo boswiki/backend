@@ -6,10 +6,18 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Domain\Users\Models\User>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Users\Models\User>
  */
 class UserFactory extends Factory
 {
+
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var class-string<\Illuminate\Database\Eloquent\Model>
+     */
+    protected $model = \Domain\Users\Models\User::class;
+
     /**
      * Define the model's default state.
      *
@@ -19,7 +27,7 @@ class UserFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'username' => fake()->userName(),
+            'username' => fake()->userName() . Str::uuid()->toString(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password

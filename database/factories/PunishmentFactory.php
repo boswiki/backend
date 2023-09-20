@@ -2,14 +2,23 @@
 
 namespace Database\Factories;
 
-use App\Domain\Users\Models\User;
+use Domain\Users\Models\Punishment;
+use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Domain\Users\Models\Punishment>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Users\Models\Punishment>
  */
 class PunishmentFactory extends Factory
 {
+
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var class-string<\Illuminate\Database\Eloquent\Model>
+     */
+    protected $model = Punishment::class;
+
     /**
      * Define the model's default state.
      *
