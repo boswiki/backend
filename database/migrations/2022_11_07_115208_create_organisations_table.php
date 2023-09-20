@@ -14,9 +14,9 @@ return new class extends Migration
             $table->string('abbreviation')->nullable();
             $table->string('website')->nullable();
 
-            $table->foreignIdFor(\App\Domain\Users\Models\User::class)->constrained();
-            $table->foreignIdFor(\App\Domain\Common\Models\Category::class)->constrained();
-            $table->foreignIdFor(\App\Domain\Common\Models\Address::class)->nullable()->constrained();
+            $table->foreignIdFor(\Domain\Users\Models\User::class)->constrained();
+            $table->foreignIdFor(\Domain\Common\Models\Category::class)->constrained();
+            $table->foreignIdFor(\Domain\Common\Models\Address::class)->nullable()->constrained();
 
             $table->timestamps();
         });

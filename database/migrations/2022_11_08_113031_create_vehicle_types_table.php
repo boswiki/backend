@@ -13,7 +13,7 @@ return new class extends Migration
             $table->string('name');
 
             $table->foreignId('parent_id')->constrained('vehicle_types');
-            $table->foreignIdFor(\App\Domain\Common\Models\Category::class)->constrained();
+            $table->foreignIdFor(\Domain\Common\Models\Category::class)->constrained();
 
             $table->timestamps();
         });

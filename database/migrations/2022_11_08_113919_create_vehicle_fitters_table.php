@@ -14,8 +14,8 @@ return new class extends Migration
             $table->string('email');
             $table->string('website');
 
-            $table->foreignIdFor(\App\Domain\Users\Models\User::class)->constrained();
-            $table->foreignIdFor(\App\Domain\Common\Models\Address::class)->constrained();
+            $table->foreignIdFor(\Domain\Users\Models\User::class)->constrained();
+            $table->foreignIdFor(\Domain\Common\Models\Address::class)->constrained();
 
             $table->timestamps();
         });

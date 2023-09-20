@@ -13,7 +13,7 @@ return new class extends Migration
             $table->tinyInteger('value');
             $table->morphs('pointable');
 
-            $table->foreignIdFor(\App\Domain\Users\Models\User::class)->constrained();
+            $table->foreignIdFor(\Domain\Users\Models\User::class)->constrained();
 
             $table->timestamps();
         });

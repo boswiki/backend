@@ -6,30 +6,15 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('favorites', function (Blueprint $table) {
             $table->id();
-            $table->morphs('favoriteable');
+            $table->morphs('favorable');
 
-            $table->foreignIdFor(\App\Domain\Users\Models\User::class)->constrained();
+            $table->foreignIdFor(\Domain\Users\Models\User::class)->constrained();
 
             $table->timestamps();
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('favorites');
     }
 };

@@ -11,8 +11,8 @@ return new class extends Migration
         Schema::create('user_station', function (Blueprint $table) {
             $table->primary(['user_id', 'station_id']);
 
-            $table->foreignIdFor(\App\Domain\Users\Models\User::class)->constrained();
-            $table->foreignIdFor(\App\Domain\Stations\Models\Station::class)->constrained();
+            $table->foreignIdFor(\Domain\Users\Models\User::class)->constrained();
+            $table->foreignIdFor(\Domain\Stations\Models\Station::class)->constrained();
 
             $table->timestamps();
         });
