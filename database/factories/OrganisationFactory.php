@@ -2,16 +2,25 @@
 
 namespace Database\Factories;
 
-use App\Domain\Common\Models\Address;
-use App\Domain\Common\Models\Category;
-use App\Domain\Users\Models\User;
+use Domain\Common\Models\Address;
+use Domain\Common\Models\Category;
+use Domain\Common\Models\Organisation;
+use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Domain\Common\Models\Organisation>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Common\Models\Organisation>
  */
 class OrganisationFactory extends Factory
 {
+
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var class-string<\Illuminate\Database\Eloquent\Model>
+     */
+    protected $model = Organisation::class;
+
     /**
      * Define the model's default state.
      *
@@ -25,7 +34,13 @@ class OrganisationFactory extends Factory
             'abbreviation' => fake()->name(),
             'user_id' => User::factory(),
             'category_id' => Category::factory(),
-            'address_id' => Address::factory()
         ];
+    }
+
+    public function configure()
+    {
+        return $this->afterCreating(function (Organisation $organisation) {
+            $organisation->address()->save(Address::factory()->make());
+        });
     }
 }

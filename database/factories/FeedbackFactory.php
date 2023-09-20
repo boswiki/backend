@@ -2,15 +2,23 @@
 
 namespace Database\Factories;
 
-use App\Domain\Feedback\Enums\Feedback;
-use App\Domain\Users\Models\User;
+use Domain\Feedback\Enums\Feedback;
+use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Domain\Feedback\Models\Feedback>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Feedback\Models\Feedback>
  */
 class FeedbackFactory extends Factory
 {
+
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var class-string<\Illuminate\Database\Eloquent\Model>
+     */
+    protected $model = Feedback::class;
+
     /**
      * Define the model's default state.
      *
