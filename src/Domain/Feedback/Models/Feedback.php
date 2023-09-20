@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Domain\Feedback\Models;
+namespace Domain\Feedback\Models;
 
-use App\Domain\Users\Models\User;
+use Database\Factories\FeedbackFactory;
+use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -10,6 +11,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Feedback extends Model
 {
     use HasFactory;
+
+    protected static function newFactory()
+    {
+        return FeedbackFactory::new();
+    }
 
     public function author(): BelongsTo
     {
