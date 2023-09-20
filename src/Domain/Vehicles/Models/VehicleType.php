@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Domain\Vehicles\Models;
+namespace Domain\Vehicles\Models;
 
-use App\Domain\Common\Models\Category;
+use Database\Factories\VehicleTypeFactory;
+use Domain\Common\Models\Category;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -11,6 +12,11 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 class VehicleType extends Model
 {
     use HasFactory;
+
+    protected static function newFactory()
+    {
+        return VehicleTypeFactory::new();
+    }
 
     public function category(): BelongsTo
     {

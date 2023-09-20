@@ -1,26 +1,28 @@
 <?php
 
-namespace App\Domain\Users\Models;
+namespace Domain\Users\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use App\Domain\Common\Models\Favorite;
-use App\Domain\Feedback\Models\Feedback;
-use App\Domain\Points\Models\Point;
-use App\Domain\Stations\Models\District;
-use App\Domain\Stations\Models\DistrictUser;
-use App\Domain\Stations\Models\Station;
-use App\Domain\Stations\Models\StationUser;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Database\Factories\UserFactory;
+use Domain\Common\Models\Favorite;
+use Domain\Feedback\Models\Feedback;
+use Domain\Points\Models\Point;
+use Domain\Stations\Models\District;
+use Domain\Stations\Models\DistrictUser;
+use Domain\Stations\Models\Station;
+use Domain\Stations\Models\StationUser;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laravel\Passport\HasApiTokens;
+use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasFactory, Notifiable, HasApiTokens;
 
     protected $fillable = [
         'name',
@@ -36,6 +38,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    protected static function newFactory(): Factory
+    {
+        return UserFactory::new();
+    }
 
     public function favorites(): HasMany
     {

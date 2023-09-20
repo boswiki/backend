@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Domain\Vehicles\Models;
+namespace Domain\Vehicles\Models;
 
-use App\Domain\Common\Models\Category;
-use App\Domain\Common\Models\Favorite;
-use App\Domain\Common\Models\Organisation;
-use App\Domain\Common\Models\Report;
-use App\Domain\Stations\Models\Station;
-use App\Domain\Users\Models\User;
+use Database\Factories\VehicleFactory;
+use Domain\Common\Models\Category;
+use Domain\Common\Models\Favorite;
+use Domain\Common\Models\Organisation;
+use Domain\Common\Models\Report;
+use Domain\Stations\Models\Station;
+use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -18,6 +19,11 @@ class Vehicle extends Model
 {
     use HasFactory;
 
+    protected static function newFactory()
+    {
+        return VehicleFactory::new();
+    }
+
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);
@@ -25,7 +31,7 @@ class Vehicle extends Model
 
     public function favorites(): MorphMany
     {
-        return $this->morphMany(Favorite::class, 'favoriteable');
+        return $this->morphMany(Favorite::class, 'favorable');
     }
 
     public function organisation(): BelongsTo

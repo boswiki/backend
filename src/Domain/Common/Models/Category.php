@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Domain\Common\Models;
+namespace Domain\Common\Models;
 
-use App\Domain\Stations\Models\Station;
-use App\Domain\Stations\Models\StationType;
-use App\Domain\Vehicles\Models\Vehicle;
-use App\Domain\Vehicles\Models\VehicleType;
+use Database\Factories\CategoryFactory;
+use Domain\Stations\Models\Station;
+use Domain\Stations\Models\StationType;
+use Domain\Vehicles\Models\Vehicle;
+use Domain\Vehicles\Models\VehicleType;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -13,6 +14,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Category extends Model
 {
     use HasFactory;
+
+    protected static function newFactory()
+    {
+        return CategoryFactory::new();
+    }
 
     public function stations(): HasMany
     {

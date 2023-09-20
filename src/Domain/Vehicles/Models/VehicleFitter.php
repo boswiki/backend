@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Domain\Vehicles\Models;
+namespace Domain\Vehicles\Models;
 
-use App\Domain\Common\Concerns\HasAddresses;
-use App\Domain\Users\Models\User;
+use Database\Factories\VehicleFitterFactory;
+use Domain\Common\Concerns\HasAddresses;
+use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -12,6 +13,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class VehicleFitter extends Model
 {
     use HasFactory, HasAddresses;
+
+    protected static function newFactory()
+    {
+        return VehicleFitterFactory::new();
+    }
 
     public function author(): BelongsTo
     {
