@@ -21,7 +21,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:3000', 'https://bos.wiki'],
+    'allowed_origins' => ['http://localhost:3000', 'https://bos.wiki', 'https://www.bos.wiki'],
 
     'allowed_origins_patterns' => [],
 
