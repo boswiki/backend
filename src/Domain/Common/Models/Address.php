@@ -11,6 +11,8 @@ class Address extends Model
 {
     use HasFactory;
 
+    protected $guarded =[];
+
     protected static function newFactory()
     {
         return AddressFactory::new();
