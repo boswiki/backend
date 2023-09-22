@@ -15,13 +15,11 @@ return [
     |
     */
 
-    'paths' => [
-        '*',
-    ],
+    'paths' => ['*'],
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:3000', 'https://bos.wiki', 'https://www.bos.wiki'],
+    'allowed_origins' => [env('FRONTEND_URL', 'http://localhost:3000')],
 
     'allowed_origins_patterns' => [],
 

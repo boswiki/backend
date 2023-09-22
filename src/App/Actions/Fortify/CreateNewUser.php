@@ -5,6 +5,7 @@ namespace App\Actions\Fortify;
 use Domain\Users\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
 
@@ -39,6 +40,7 @@ class CreateNewUser implements CreatesNewUsers
         ])->validate();
 
         return User::create([
+            'uuid' => Str::uuid()->toString(),
             'first_name' => $input['first_name'],
             'last_name' => $input['last_name'],
             'username' => $input['username'],
