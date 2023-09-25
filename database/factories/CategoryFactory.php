@@ -27,8 +27,7 @@ class CategoryFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'name' => fake()->name . Str::uuid()->toString()
+            'name' => $this->faker->name . Str::uuid()->toString()
         ];
     }
 }

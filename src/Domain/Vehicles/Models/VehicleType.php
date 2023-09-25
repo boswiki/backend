@@ -4,6 +4,7 @@ namespace Domain\Vehicles\Models;
 
 use Database\Factories\VehicleTypeFactory;
 use Domain\Common\Models\Category;
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -11,7 +12,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class VehicleType extends Model
 {
-    use HasFactory;
+    use HasFactory, HasUuids;
 
     protected static function newFactory()
     {

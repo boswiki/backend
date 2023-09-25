@@ -28,11 +28,19 @@ class DistrictFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'name' => fake()->country(),
+            'name' => $this->faker->country(),
+            'type' => $this->faker->randomElement([
+                \Domain\Stations\Enums\District::FEDERAL_STATE->value,
+                \Domain\Stations\Enums\District::STATE_DISTRICT->value,
+                \Domain\Stations\Enums\District::CITY_DISTRICT->value,
+            ]),
             'bounding_box' => DB::raw('ST_PolygonFromText("POLYGON((10 10, 10 20, 20 20, 20 10, 10 10))")'),
             'border' => DB::raw('ST_PolygonFromText("POLYGON((10 10, 10 20, 20 20, 20 10, 10 10))")'),
-            'location' => DB::raw('ST_SRID(Point(' . fake()->numberBetween(-180, 180) . ', ' . fake()->numberBetween(-90, 90) . '), 4326)'),
+            'location' => DB::raw(
+                'ST_SRID(Point('
+                    . $this->faker->numberBetween(-180, 180) . ', '
+                    . $this->faker->numberBetween(-90, 90) .
+                '), 4326)'),
         ];
     }
 }

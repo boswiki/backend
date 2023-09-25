@@ -11,14 +11,18 @@ class StationResource extends JsonResource
     public function toArray(Request $request)
     {
         return [
-            'id' => $this->uuid,
+            'id' => $this->id,
+            'status' => $this->status,
             'name' => $this->name,
             'website' => $this->website,
+            'latitude' => $this->latitude,
+            'longitude' => $this->longitude,
             'address' => AddressResource::make($this->address),
             'stationType' => StationTypeResource::make($this->stationType),
-//            FIXME: throws some utf8 error
-//            'district' => $this->district,
-            'createdAt' => $this->created_at->diffForHumans()
+            'vehicles' => $this->vehicles,
+            'controlCenter' => $this->controlCenter,
+            'district' => $this->district,
+            'createdAt' => $this->created_at?->diffForHumans()
         ];
     }
 }

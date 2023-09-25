@@ -30,10 +30,9 @@ class OrganisationFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'name' => fake()->company(),
-            'website' => fake()->url(),
-            'abbreviation' => fake()->name(),
+            'name' => $this->faker->company(),
+            'website' => $this->faker->url(),
+            'abbreviation' => $this->faker->name(),
             'user_id' => User::factory(),
             'category_id' => Category::factory(),
         ];

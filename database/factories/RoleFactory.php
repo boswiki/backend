@@ -27,8 +27,7 @@ class RoleFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'name' => fake()->name(),
+            'name' => $this->faker->name(),
             'scopes' => '[]'
         ];
     }

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Domain\Users\Models\User;
 use Domain\Vehicles\Models\VehicleFitter;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
@@ -27,14 +28,10 @@ class VehicleFitterFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'name' => fake()->company(),
-            'street' => fake()->streetName(),
-            'street_number' => fake()->randomNumber(1),
-            'zip' => fake()->randomNumber(5),
-            'city' => fake()->city(),
-            'email' => fake()->companyEmail(),
-            'website' => fake()->url()
+            'user_id' => User::factory(),
+            'name' => $this->faker->company(),
+            'email' => $this->faker->companyEmail(),
+            'website' => $this->faker->url()
         ];
     }
 }

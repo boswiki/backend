@@ -27,8 +27,7 @@ class VehicleManufacturerFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'name' => fake()->company(),
+            'name' => $this->faker->company(),
         ];
     }
 }

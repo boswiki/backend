@@ -4,13 +4,14 @@ namespace Domain\Feedback\Models;
 
 use Database\Factories\FeedbackFactory;
 use Domain\Users\Models\User;
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Feedback extends Model
 {
-    use HasFactory;
+    use HasFactory, HasUuids;
 
     protected static function newFactory()
     {

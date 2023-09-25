@@ -39,7 +39,7 @@ class FavoriteFactory extends Factory
 
     public function favorable()
     {
-        return fake()->randomElement([
+        return $this->faker->randomElement([
             Vehicle::class,
             Station::class,
         ]);

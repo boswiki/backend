@@ -33,8 +33,7 @@ class PointFactory extends Factory
         $commentable = $this->commentable();
 
         return [
-            'uuid' => Str::uuid()->toString(),
-            'value' => fake()->randomNumber(3),
+            'value' => $this->faker->randomNumber(3),
             'user_id' => User::factory(),
             'commentable_id' => $commentable::factory(),
             'commentable_type' => $commentable,
@@ -43,7 +42,7 @@ class PointFactory extends Factory
 
     public function commentable()
     {
-        return fake()->randomElement([
+        return $this->faker->randomElement([
             Vehicle::class,
             Station::class,
             Organisation::class,

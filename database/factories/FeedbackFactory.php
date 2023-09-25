@@ -28,14 +28,13 @@ class FeedbackFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'type' => fake()->randomElement([
+            'type' => $this->faker->randomElement([
                 Feedback::OTHER,
                 Feedback::IDEA,
                 Feedback::BUG,
                 Feedback::PRAISE
             ]),
-            'content' => fake()->realText(),
+            'content' => $this->faker->realText(),
             'user_id' => User::factory()
         ];
     }

@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Domain\Common\Models\Address;
+use Domain\Stations\Models\ControlCenter;
 use Domain\Stations\Models\District;
 use Domain\Stations\Models\Station;
 use Domain\Stations\Models\StationType;
@@ -32,32 +33,22 @@ class StationFactory extends Factory
     public function definition()
     {
         return [
-            'name' => fake()->company(),
-            'uuid' => Str::uuid()->toString(),
-            'status' => fake()->randomElement([
-                'proposed',
+            'name' => $this->faker->fireStationName(),
+            'status' => $this->faker->randomElement([
+                'draft',
                 'pending',
                 'verified',
                 'archived'
             ]),
-            'website' => fake()->url(),
-            'location' => DB::raw('ST_SRID(Point('.fake()->longitude().', '.fake()->latitude().'), 4326)'),
+            'website' => $this->faker->url(),
+            'location' => DB::raw('ST_SRID(Point('.$this->faker->longitude().', '.$this->faker->latitude().'), 4326)'),
             'user_id' => User::factory(),
             'station_type_id' => StationType::factory(),
             'district_id' => District::factory(),
+            'control_center_id' => ControlCenter::factory(),
             'description' => json_encode([
-                'text' => fake()->text()
+                'text' => $this->faker->text()
             ]),
-            'address_id' => Address::factory()->state([
-                'addressable_type' => 'Domain\Stations\Models\Station',
-            ])
         ];
-    }
-
-    public function configure()
-    {
-        return $this->afterCreating(function (Station $station) {
-            $station->address()->save(Address::factory()->make());
-        });
     }
 }

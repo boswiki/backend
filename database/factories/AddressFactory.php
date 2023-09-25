@@ -30,23 +30,40 @@ class AddressFactory extends Factory
      */
     public function definition()
     {
+        return [
+            'street' => $this->faker->streetName(),
+            'number' => $this->faker->randomNumber(2),
+            'city' => $this->faker->city(),
+            'county' => $this->faker->country(),
+            'country' => $this->faker->country(),
+            'zip' => $this->faker->randomNumber(5),
+
+            'addressable_id' => Station::factory(),
+            'addressable_type' => function (array $attributes) {
+                return Station::find($attributes['addressable_id'])->getMorphClass();
+            }
+        ];
+    }
+
+    public function forModel(string $model): Factory
+    {
         $addressable = [
-          Station::class,
-          District::class,
-          Organisation::class,
-          ControlCenter::class
+            'district' => District::class,
+            'organisation' => Organisation::class,
+            'control_center' => ControlCenter::class
         ];
 
-        return [
-            'uuid' => Str::uuid()->toString(),
-            'street' => fake()->streetName(),
-            'number' => fake()->randomNumber(2),
-            'city' => fake()->city(),
-            'county' => fake()->country(),
-            'country' => fake()->country(),
-            'zip' => fake()->randomNumber(5),
-            'addressable_type' => $addressableType = fake()->randomElement($addressable),
-            'addressable_id' => $addressableType::factory()->create()->id,
-        ];
+        if (empty($addressable[$model])) {
+            throw new \Exception('Cannot create Model for ' .  $model);
+        };
+
+        return $this->state(function (array $attributes) use ($addressable, $model){
+            return [
+                'addressable_id' => $addressable[$model]::factory(),
+                'addressable_type' => function (array $attributes) use ($addressable, $model){
+                    return $addressable[$model]::find($attributes['addressable_id'])->getMorphClass();
+                }
+            ];
+        });
     }
 }

@@ -32,8 +32,7 @@ class ReportFactory extends Factory
         $reportable = $this->reportable();
 
         return [
-            'uuid' => Str::uuid()->toString(),
-            'content' => fake()->realText(),
+            'content' => $this->faker->realText(),
             'user_id' => User::factory(),
             'reportable_id' => $reportable->factory(),
             'reportable_type' => $reportable
@@ -42,7 +41,7 @@ class ReportFactory extends Factory
 
     public function reportable()
     {
-        return fake()->randomElement([
+        return $this->faker->randomElement([
             Vehicle::class,
             Station::class,
         ]);

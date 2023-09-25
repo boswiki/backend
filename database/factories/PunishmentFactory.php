@@ -28,9 +28,8 @@ class PunishmentFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'reason' => fake()->realText(),
-            'expires_in' => fake()->date(),
+            'reason' => $this->faker->realText(),
+            'expires_in' => $this->faker->date(),
             'user_id' => User::factory()
         ];
     }

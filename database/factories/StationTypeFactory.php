@@ -28,8 +28,7 @@ class StationTypeFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'name' => fake()->company(),
+            'name' => $this->faker->company(),
             'description' => '[]',
             'category_id' => Category::factory(),
         ];

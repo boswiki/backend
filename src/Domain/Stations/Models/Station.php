@@ -10,25 +10,26 @@ use Domain\Common\Models\Organisation;
 use Domain\Common\Models\Report;
 use Domain\Users\Models\User;
 use Domain\Vehicles\Models\Vehicle;
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Support\Str;
+use Support\Traits\HasLocation;
 
 class Station extends Model
 {
-    use HasFactory, HasAddresses;
+    use HasFactory, HasAddresses, HasUuids, HasLocation;
+
+    protected $hidden = ['location'];
 
     protected $casts = [
-        'created_at' => 'date'
+        'created_at' => 'date',
+        'description' => 'array'
     ];
-
-    public function getRouteKeyName()
-    {
-        return 'uuid';
-    }
 
     protected static function newFactory()
     {

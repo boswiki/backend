@@ -28,13 +28,11 @@ class VehicleTypeFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'name' => fake()->randomElement([
+            'name' => $this->faker->randomElement([
                 'HLF 20',
                 'LF 10',
                 'RTW'
             ]),
-            'parent_id' => '1',
             'category_id' => Category::factory()
         ];
     }

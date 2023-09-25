@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use Domain\Common\Models\Category;
 use Domain\Common\Models\Organisation;
+use Domain\Stations\Models\Station;
 use Domain\Users\Models\User;
 use Domain\Vehicles\Models\Vehicle;
 use Domain\Vehicles\Models\VehicleFitter;
@@ -33,27 +34,19 @@ class VehicleFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'name' => fake()->randomElement([
-                'Florian Freising 47/1',
-                'Florian München 1/42/1',
-                'Rotkreuz München 1/71/2',
-            ]),
+            'name' => $this->faker->vehicleRadioName(),
             'description' => '[]',
-            'construction_year' => fake()->year(),
-            'commissioning_date' => fake()->date(),
-            'decommissioning_date' => fake()->date(),
-            'crew_count' => fake()->randomNumber(2),
-
-            'category_id' => Category::factory(),
-            'organisation_id' => Organisation::factory(),
+            'construction_year' => $this->faker->year(),
+            'commissioning_date' => $this->faker->date(),
+            'decommissioning_date' => $this->faker->date(),
+            'crew_count' => $this->faker->randomNumber(2),
             'user_id' => User::factory(),
-            'vehicle_manufacturer_id' => VehicleManufacturer::factory(),
-
+            'category_id' => Category::factory(),
+            'station_id' => Station::factory(),
+            'organisation_id' => Organisation::factory(),
             'vehicle_type_id' => VehicleType::factory(),
-            'vehicle_subtype_id' => VehicleType::factory(),
-
-            'vehicle_fitter_id' => fake()->randomElement(null, VehicleFitter::factory())
+            'vehicle_manufacturer_id' => VehicleManufacturer::factory(),
+            'vehicle_fitter_id' => VehicleFitter::factory()
         ];
     }
 }

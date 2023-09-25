@@ -7,6 +7,7 @@ use Domain\Common\Concerns\HasAddresses;
 use Domain\Stations\Models\Station;
 use Domain\Users\Models\User;
 use Domain\Vehicles\Models\Vehicle;
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -14,7 +15,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Organisation extends Model
 {
-    use HasFactory, HasAddresses;
+    use HasFactory, HasAddresses, HasUuids;
 
     protected static function newFactory()
     {

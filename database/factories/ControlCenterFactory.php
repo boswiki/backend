@@ -29,17 +29,8 @@ class ControlCenterFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid()->toString(),
-            'name' => fake()->company(),
-            'location' => DB::raw('ST_SRID(Point('.fake()->longitude().', '.fake()->latitude().'), 4326)'),
-            'address_id' => Address::factory()
+            'name' => 'Leitstelle ' . $this->faker->city(),
+            'location' => DB::raw('ST_SRID(Point('.$this->faker->longitude().', '.$this->faker->latitude().'), 4326)'),
         ];
-    }
-
-    public function configure()
-    {
-        return $this->afterCreating(function (ControlCenter $controlCenter) {
-            $controlCenter->address()->save(Address::factory()->make());
-        });
     }
 }

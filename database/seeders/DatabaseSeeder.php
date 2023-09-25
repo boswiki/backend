@@ -14,6 +14,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \Domain\Users\Models\User::factory(10)->create();
+        $this->call([
+            DistrictSeeder::class
+        ]);
     }
 }
