@@ -30,6 +30,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
         'remember_token',
+        'two_factor_secret',
+        'two_factor_recovery_codes',
+        'two_factor_confirmed_at'
     ];
 
     protected $casts = [
@@ -60,6 +63,11 @@ class User extends Authenticatable
             ->belongsToMany(Station::class)
             ->as('stations')
             ->using(StationUser::class);
+    }
+
+    public function createdStations(): HasMany
+    {
+        return $this->hasMany(Station::class);
     }
 
     public function roles(): HasOne
