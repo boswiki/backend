@@ -14,6 +14,8 @@ class StationType extends Model
 {
     use HasFactory, HasUuids;
 
+    protected $guarded = [];
+
     protected static function newFactory()
     {
         return StationTypeFactory::new();

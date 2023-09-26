@@ -24,6 +24,7 @@ class Station extends Model
 {
     use HasFactory, HasAddresses, HasUuids, HasLocation;
 
+    protected $guarded = [];
     protected $hidden = ['location'];
 
     protected $casts = [
@@ -81,7 +82,7 @@ class Station extends Model
 
     public function author(): BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 
     public function vehicles(): HasMany

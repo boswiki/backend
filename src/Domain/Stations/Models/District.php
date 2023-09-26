@@ -19,6 +19,8 @@ class District extends Model
       'location', 'border', 'bounding_box'
     ];
 
+    protected $guarded = [];
+
     protected $casts = [
         'created_at' => 'date',
         'description' => 'array'

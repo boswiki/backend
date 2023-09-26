@@ -16,6 +16,8 @@ class Category extends Model
 {
     use HasFactory, HasUuids;
 
+    protected $guarded = [];
+
     protected static function newFactory()
     {
         return CategoryFactory::new();

@@ -15,6 +15,7 @@ class ControlCenter extends Model
     use HasFactory, HasAddresses, HasUuids, HasLocation;
 
     protected $hidden = ['location'];
+    protected $guarded = [];
 
     protected static function newFactory()
     {
