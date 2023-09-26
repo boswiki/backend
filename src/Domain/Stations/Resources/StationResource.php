@@ -3,6 +3,7 @@
 namespace Domain\Stations\Resources;
 
 use Domain\Common\Resources\AddressResource;
+use Domain\Users\Resources\UserResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -17,12 +18,15 @@ class StationResource extends JsonResource
             'website' => $this->website,
             'latitude' => $this->latitude,
             'longitude' => $this->longitude,
+            'createdAt' => $this->created_at?->diffForHumans(),
+
+            // RELATIONS
             'address' => AddressResource::make($this->address),
             'stationType' => StationTypeResource::make($this->stationType),
             'vehicles' => $this->vehicles,
             'controlCenter' => $this->controlCenter,
             'district' => $this->district,
-            'createdAt' => $this->created_at?->diffForHumans()
+            'author' => UserResource::make($this->author),
         ];
     }
 }
