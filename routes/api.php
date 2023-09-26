@@ -8,3 +8,5 @@ Route::middleware('auth:sanctum')->get('/me', fn (Request $request) => $request-
 Route::get('/categories', [\App\Api\Controllers\CategoryController::class, 'index'])->name('categories');
 Route::resource('stations', \App\Api\Controllers\StationController::class);
 
+Route::get('/statistics', \App\Api\Controllers\StatisticsController::class);
+
