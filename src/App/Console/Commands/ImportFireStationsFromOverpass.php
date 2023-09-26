@@ -58,7 +58,7 @@ class ImportFireStationsFromOverpass extends Command
         $geometry = $feature['geometry'];
         $osmId = $feature['id'];
 
-        $stationTypeId = StationType::query()->whereName($this->determineStationType($properties['name']))->first()->id;
+        $stationTypeId = StationType::query()->whereName($this->determineStationType($properties['name']))->first()?->id;
 
         $coordinates = $geometry['type'] === 'Point'
             ? "{$geometry['coordinates'][1]} {$geometry['coordinates'][0]}"
@@ -129,7 +129,7 @@ class ImportFireStationsFromOverpass extends Command
             'FF' => 'Freiwillige Feuerwehr',
             'Freiwillig' => 'Freiwillige Feuerwehr',
             'Werk' => 'Werkfeuerwehr',
-            'Wasser' => 'Wasserwacht',
+            'Wasser' => 'Wasserrettung',
             'Rettung' => 'Rettungswache',
         ];
 
@@ -163,7 +163,7 @@ class ImportFireStationsFromOverpass extends Command
         $finalCentroidX = $centroidCalculation['accumulatedCentroidX'] / (6 * $totalArea);
         $finalCentroidY = $centroidCalculation['accumulatedCentroidY'] / (6 * $totalArea);
 
-        return "{$finalCentroidX} {$finalCentroidY}";
+        return "{$finalCentroidY} {$finalCentroidX}";
     }
 
     protected function createAddressForStation(Station $station, array $properties): void
