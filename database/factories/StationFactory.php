@@ -42,13 +42,14 @@ class StationFactory extends Factory
             ]),
             'website' => $this->faker->url(),
             'location' => DB::raw('ST_SRID(Point('.$this->faker->longitude().', '.$this->faker->latitude().'), 4326)'),
+            'description' => json_encode([
+                'text' => $this->faker->text()
+            ]),
             'user_id' => User::factory(),
             'station_type_id' => StationType::factory(),
             'district_id' => District::factory(),
             'control_center_id' => ControlCenter::factory(),
-            'description' => json_encode([
-                'text' => $this->faker->text()
-            ]),
+            'osm_id' => 'node/'.$this->faker->uuid()
         ];
     }
 }
