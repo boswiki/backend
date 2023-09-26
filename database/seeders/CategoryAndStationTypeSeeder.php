@@ -25,9 +25,11 @@ class CategoryAndStationTypeSeeder extends Seeder
                 'Rettungswache',
                 'Notarztstandort',
                 'Wasserwacht',
-                'Bergwacht'
+                'Bergwacht',
+                'Ortsverband'
             ],
             'Polizei' => [
+                'Polizeidirektion',
                 'Polizeiwache',
                 'Polizeiinspektion',
                 'Kriminalpolizeiinspektion',
