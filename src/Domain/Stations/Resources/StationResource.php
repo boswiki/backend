@@ -16,8 +16,8 @@ class StationResource extends JsonResource
             'status' => $this->status,
             'name' => $this->name,
             'website' => $this->website,
-            'latitude' => $this->latitude,
-            'longitude' => $this->longitude,
+            'latitude' => $this->location->latitude,
+            'longitude' => $this->location->longitude,
             'createdAt' => $this->created_at?->diffForHumans(),
             'description' => $this->description,
 

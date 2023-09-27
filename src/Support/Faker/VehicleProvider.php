@@ -23,10 +23,10 @@ class VehicleProvider extends Base
         $city = fake()->city();
 
         $numberPattern = fake()->randomElement([
-            fake()->numberBetween(1, 99) . '/' . fake()->numberBetween(1, 99),
-            fake()->numberBetween(1, 99) . '/' . fake()->numberBetween(1, 99) . '/' . fake()->numberBetween(1, 9),
+            fake()->numberBetween(1, 99).'/'.fake()->numberBetween(1, 99),
+            fake()->numberBetween(1, 99).'/'.fake()->numberBetween(1, 99).'/'.fake()->numberBetween(1, 9),
         ]);
 
-        return $name . ' ' . $city . ' ' . $numberPattern;
+        return $name.' '.$city.' '.$numberPattern;
     }
 }

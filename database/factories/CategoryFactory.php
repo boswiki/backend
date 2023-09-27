@@ -11,7 +11,6 @@ use Illuminate\Support\Str;
  */
 class CategoryFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *
@@ -27,7 +26,7 @@ class CategoryFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name . Str::uuid()->toString()
+            'name' => $this->faker->name.Str::uuid()->toString(),
         ];
     }
 }

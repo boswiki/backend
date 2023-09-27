@@ -20,7 +20,7 @@ class StationIndexResource extends JsonResource
             'name' => $this->name,
             'status' => $this->status,
             'address' => AddressResource::make($this->address),
-            'createdAt' => $this->created_at?->diffForHumans()
+            'createdAt' => $this->created_at?->diffForHumans(),
         ];
     }
 }

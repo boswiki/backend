@@ -7,14 +7,12 @@ use Domain\Stations\Models\Station;
 use Domain\Users\Models\User;
 use Domain\Vehicles\Models\Vehicle;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Common\Models\Report>
  */
 class ReportFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *
@@ -35,7 +33,7 @@ class ReportFactory extends Factory
             'content' => $this->faker->realText(),
             'user_id' => User::factory(),
             'reportable_id' => $reportable->factory(),
-            'reportable_type' => $reportable
+            'reportable_type' => $reportable,
         ];
     }
 

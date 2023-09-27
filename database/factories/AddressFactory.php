@@ -8,14 +8,12 @@ use Domain\Stations\Models\ControlCenter;
 use Domain\Stations\Models\District;
 use Domain\Stations\Models\Station;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Common\Models\Address>
  */
 class AddressFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *
@@ -41,7 +39,7 @@ class AddressFactory extends Factory
             'addressable_id' => Station::factory(),
             'addressable_type' => function (array $attributes) {
                 return Station::find($attributes['addressable_id'])->getMorphClass();
-            }
+            },
         ];
     }
 
@@ -50,19 +48,19 @@ class AddressFactory extends Factory
         $addressable = [
             'district' => District::class,
             'organisation' => Organisation::class,
-            'control_center' => ControlCenter::class
+            'control_center' => ControlCenter::class,
         ];
 
         if (empty($addressable[$model])) {
-            throw new \Exception('Cannot create Model for ' .  $model);
-        };
+            throw new \Exception('Cannot create Model for '.$model);
+        }
 
-        return $this->state(function (array $attributes) use ($addressable, $model){
+        return $this->state(function (array $attributes) use ($addressable, $model) {
             return [
                 'addressable_id' => $addressable[$model]::factory(),
-                'addressable_type' => function (array $attributes) use ($addressable, $model){
+                'addressable_type' => function (array $attributes) use ($addressable, $model) {
                     return $addressable[$model]::find($attributes['addressable_id'])->getMorphClass();
-                }
+                },
             ];
         });
     }

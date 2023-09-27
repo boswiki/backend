@@ -12,7 +12,7 @@ class Address extends Model
 {
     use HasFactory, HasUuids;
 
-    protected $guarded =[];
+    protected $guarded = [];
 
     protected static function newFactory()
     {

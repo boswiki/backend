@@ -9,4 +9,3 @@ Route::get('/categories', [\App\Api\Controllers\CategoryController::class, 'inde
 Route::resource('stations', \App\Api\Controllers\StationController::class);
 
 Route::get('/statistics', \App\Api\Controllers\StatisticsController::class);
-

@@ -1,5 +1,5 @@
 <?php
 
-it('returns true', function(){
+it('returns true', function () {
     expect(true)->toBeTrue();
 });

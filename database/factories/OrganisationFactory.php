@@ -7,14 +7,12 @@ use Domain\Common\Models\Category;
 use Domain\Common\Models\Organisation;
 use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Common\Models\Organisation>
  */
 class OrganisationFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *
@@ -31,7 +29,7 @@ class OrganisationFactory extends Factory
     {
         return [
             'name' => $this->faker->company(),
-            'website' => $this->faker->url(),
+            'website' => '$this->faker->url()',
             'abbreviation' => $this->faker->name(),
             'user_id' => User::factory(),
             'category_id' => Category::factory(),

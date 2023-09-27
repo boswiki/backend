@@ -2,7 +2,8 @@
 
 namespace App\Providers;
 
-use Faker\{Factory, Generator};
+use Faker\Factory;
+use Faker\Generator;
 use Illuminate\Support\ServiceProvider;
 use Support\Faker\FireStationProvider;
 use Support\Faker\VehicleProvider;

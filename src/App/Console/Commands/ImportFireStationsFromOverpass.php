@@ -10,12 +10,17 @@ use Domain\Stations\Models\Station;
 use Domain\Stations\Models\StationType;
 use Domain\Users\Models\User;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use MatanYadaev\EloquentSpatial\Enums\Srid;
+use MatanYadaev\EloquentSpatial\Objects\Point;
+use Support\Traits\HasGeometryCenter;
 
 class ImportFireStationsFromOverpass extends Command
 {
+    use HasGeometryCenter;
+
     protected $signature = 'import:firestations {file}';
+
     protected $description = 'Import fire stations from a GeoJSON file';
 
     /**
@@ -25,25 +30,28 @@ class ImportFireStationsFromOverpass extends Command
     {
         $filePath = $this->argument('file');
 
-        if (!file_exists($filePath)) {
+        if (! file_exists($filePath)) {
             $this->error('File not found.');
+
             return 1;
         }
 
         $geoJson = json_decode(file_get_contents($filePath), true);
 
-        if (!isset($geoJson['features'])) {
+        if (! isset($geoJson['features'])) {
             $this->error('Invalid GeoJSON format.');
+
             return 1;
         }
 
         $this->createAutoImportModels();
 
-
         foreach ($geoJson['features'] as $feature) {
             $properties = $feature['properties'];
 
-            if (empty($properties['name'])) continue;
+            if (empty($properties['name'])) {
+                continue;
+            }
 
             $station = $this->createStation($feature);
             $this->createAddressForStation($station, $properties);
@@ -61,24 +69,24 @@ class ImportFireStationsFromOverpass extends Command
         $stationTypeId = StationType::query()->whereName($this->determineStationType($properties['name']))->first()?->id;
 
         $coordinates = $geometry['type'] === 'Point'
-            ? "{$geometry['coordinates'][1]} {$geometry['coordinates'][0]}"
-            : $this->determineStationCenter(collect($geometry['coordinates'][0]));
+            ? [$geometry['coordinates'][1], $geometry['coordinates'][0]]
+            : $this->determinePolygonCenter(collect($geometry['coordinates'][0]));
 
         $station = Station::updateOrCreate(['osm_id' => $osmId], [
             'name' => $properties['name'],
             'website' => $properties['website'] ?? null,
-            'location' => DB::raw("ST_GeomFromText('POINT({$coordinates})', 4326)"),
+            'location' => new Point($coordinates[0], $coordinates[1], Srid::WGS84->value),
             'status' => 'system_import',
             'description' => json_encode(['text' => $properties['description'] ?? '']),
             'user_id' => '00000000-0000-0000-0000-000000000000',
             'station_type_id' => $stationTypeId,
             'district_id' => '00000000-0000-0000-0000-000000000000',
             'control_center_id' => '00000000-0000-0000-0000-000000000000',
-            'osm_id' => $osmId
+            'osm_id' => $osmId,
         ]);
 
-        if($station->wasRecentlyCreated) {
-            $this->info(sprintf("Imported Station %s %s [OSM %s]", $station->id, $station->name, $osmId));
+        if ($station->wasRecentlyCreated) {
+            $this->info(sprintf('Imported Station %s %s [OSM %s]', $station->id, $station->name, $osmId));
         }
 
         return $station;
@@ -98,19 +106,20 @@ class ImportFireStationsFromOverpass extends Command
         District::updateOrCreate(['id' => '00000000-0000-0000-0000-000000000000'], [
             'id' => '00000000-0000-0000-0000-000000000000',
             'name' => 'AUTO_IMPORT_CONTROL_CENTER',
-            'location' => DB::raw("ST_GeomFromText('POINT(48.137146 11.575562)',4326)"),
-            'type' => \Domain\Stations\Enums\District::FEDERAL_STATE->value
+            'location' => new Point(48.137146, 11.575562, Srid::WGS84->value),
+            'type' => \Domain\Stations\Enums\District::FEDERAL_STATE->value,
         ]);
 
         ControlCenter::updateOrCreate(['id' => '00000000-0000-0000-0000-000000000000'], [
             'id' => '00000000-0000-0000-0000-000000000000',
             'name' => 'AUTO_IMPORT_CONTROL_CENTER',
-            'location' => DB::raw("ST_GeomFromText('POINT(48.137146 11.575562)',4326)"),
+            'location' => new Point(48.137146, 11.575562, Srid::WGS84->value),
+            'osm_id' => '00000000-0000-0000-0000-000000000000',
         ]);
 
         Category::updateOrCreate(['id' => '00000000-0000-0000-0000-000000000000'], [
             'id' => '00000000-0000-0000-0000-000000000000',
-            'name' => 'AUTO_IMPORT_FIRE_STATION'
+            'name' => 'AUTO_IMPORT_FIRE_STATION',
         ]);
 
         StationType::updateOrCreate(['id' => '00000000-0000-0000-0000-000000000000'], [
@@ -134,36 +143,12 @@ class ImportFireStationsFromOverpass extends Command
         ];
 
         foreach ($stationTypeLookup as $key => $value) {
-            if (Str::startsWith($name, $key)) return $value;
+            if (Str::startsWith($name, $key)) {
+                return $value;
+            }
         }
 
         return 'AUTO_IMPORT_STATION_TYPE';
-    }
-
-    protected function determineStationCenter($polygonCoordinates): string
-    {
-        $centroidCalculation = $polygonCoordinates
-            ->push($polygonCoordinates->first())
-            ->zip($polygonCoordinates->slice(1)->push($polygonCoordinates->first()))
-            ->reduce(function ($accumulatedValues, $coordinatePair) {
-                [$currentCoordinate, $nextCoordinate] = $coordinatePair;
-                [$currentX, $currentY] = $currentCoordinate;
-                [$nextX, $nextY] = $nextCoordinate;
-
-                $tempArea = $currentX * $nextY - $nextX * $currentY;
-
-                return [
-                    'accumulatedArea' => $accumulatedValues['accumulatedArea'] + $tempArea,
-                    'accumulatedCentroidX' => $accumulatedValues['accumulatedCentroidX'] + ($currentX + $nextX) * $tempArea,
-                    'accumulatedCentroidY' => $accumulatedValues['accumulatedCentroidY'] + ($currentY + $nextY) * $tempArea
-                ];
-            }, ['accumulatedArea' => 0, 'accumulatedCentroidX' => 0, 'accumulatedCentroidY' => 0]);
-
-        $totalArea = $centroidCalculation['accumulatedArea'] * 0.5;
-        $finalCentroidX = $centroidCalculation['accumulatedCentroidX'] / (6 * $totalArea);
-        $finalCentroidY = $centroidCalculation['accumulatedCentroidY'] / (6 * $totalArea);
-
-        return "{$finalCentroidY} {$finalCentroidX}";
     }
 
     protected function createAddressForStation(Station $station, array $properties): void

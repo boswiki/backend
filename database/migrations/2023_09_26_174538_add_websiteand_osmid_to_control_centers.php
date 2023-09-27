@@ -8,8 +8,9 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::table('vehicles', function (Blueprint $table) {
-            $table->foreignUuid('station_id')->constrained();
+        Schema::table('control_centers', function (Blueprint $table) {
+            $table->string('website')->nullable();
+            $table->string('osm_id');
         });
     }
 };

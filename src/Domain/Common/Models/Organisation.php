@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Organisation extends Model
 {
-    use HasFactory, HasAddresses, HasUuids;
+    use HasAddresses, HasFactory, HasUuids;
 
     protected static function newFactory()
     {

@@ -4,14 +4,12 @@ namespace Database\Factories;
 
 use Domain\Vehicles\Models\VehicleManufacturer;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Vehicles\Models\VehicleManufacturer>
  */
 class VehicleManufacturerFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *

@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use Domain\Common\Models\Category;
 use Domain\Stations\Models\StationType;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class CategoryAndStationTypeSeeder extends Seeder
@@ -19,14 +18,14 @@ class CategoryAndStationTypeSeeder extends Seeder
                 'Freiwillige Feuerwehr',
                 'Werkfeuerwehr',
                 'Betriebsfeuerwehr',
-                'Pflichtfeuerwehr'
+                'Pflichtfeuerwehr',
             ],
             'Rettungsdienst' => [
                 'Rettungswache',
                 'Notarztstandort',
                 'Wasserrettung',
                 'Bergrettung',
-                'Ortsverband'
+                'Ortsverband',
             ],
             'Polizei' => [
                 'Polizeidirektion',
@@ -34,30 +33,30 @@ class CategoryAndStationTypeSeeder extends Seeder
                 'Polizeiinspektion',
                 'Kriminalpolizeiinspektion',
                 'Autobahnpolizeiwache',
-                'Bereitschaftspolizei'
+                'Bereitschaftspolizei',
             ],
             'Technisches Hilfswerk (THW)' => [
-                'THW-Ortsverband'
+                'THW-Ortsverband',
             ],
             'Sonstige' => [
-                'Katastrophenschutz'
-            ]
+                'Katastrophenschutz',
+            ],
         ])->each(function ($stationTypes, $categoryName) {
             $category = Category::firstOrCreate(['name' => $categoryName]);
 
             if ($category->wasRecentlyCreated) {
-                $this->command->info($category->id . ' ' . $categoryName);
+                $this->command->info($category->id.' '.$categoryName);
             }
 
             collect($stationTypes)->each(function ($stationTypeName) use ($category) {
                 $stationType = StationType::firstOrCreate([
                     'name' => $stationTypeName,
                     'category_id' => $category->id,
-                    'description' => json_encode([])
+                    'description' => json_encode([]),
                 ]);
 
                 if ($stationType->wasRecentlyCreated) {
-                    $this->command->info($stationType->id . ' ' . $stationTypeName);
+                    $this->command->info($stationType->id.' '.$stationTypeName);
                 }
             });
         });

@@ -11,14 +11,12 @@ use Domain\Vehicles\Models\VehicleFitter;
 use Domain\Vehicles\Models\VehicleManufacturer;
 use Domain\Vehicles\Models\VehicleType;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Vehicles\Models\Vehicle>
  */
 class VehicleFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *
@@ -46,7 +44,7 @@ class VehicleFactory extends Factory
             'organisation_id' => Organisation::factory(),
             'vehicle_type_id' => VehicleType::factory(),
             'vehicle_manufacturer_id' => VehicleManufacturer::factory(),
-            'vehicle_fitter_id' => VehicleFitter::factory()
+            'vehicle_fitter_id' => VehicleFitter::factory(),
         ];
     }
 }

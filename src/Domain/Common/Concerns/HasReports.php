@@ -2,7 +2,6 @@
 
 namespace App\Concerns;
 
-
 use Domain\Common\Models\Report;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 

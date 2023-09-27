@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class VehicleFitter extends Model
 {
-    use HasFactory, HasAddresses, HasUuids;
+    use HasAddresses, HasFactory, HasUuids;
 
     protected static function newFactory()
     {

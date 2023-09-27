@@ -5,14 +5,12 @@ namespace Database\Factories;
 use Domain\Users\Models\Punishment;
 use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Users\Models\Punishment>
  */
 class PunishmentFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *
@@ -30,7 +28,7 @@ class PunishmentFactory extends Factory
         return [
             'reason' => $this->faker->realText(),
             'expires_in' => $this->faker->date(),
-            'user_id' => User::factory()
+            'user_id' => User::factory(),
         ];
     }
 }

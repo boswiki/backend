@@ -28,7 +28,8 @@ class Test extends Command
     public function handle()
     {
 
-        $this->info("yes");
+        $this->info('yes');
+
         return Command::SUCCESS;
     }
 }

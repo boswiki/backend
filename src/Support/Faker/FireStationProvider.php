@@ -9,9 +9,9 @@ class FireStationProvider extends Base
     public function fireStationName(): string
     {
         return static::randomElement([
-                'Freiwillige Feuerwehr',
-                'Berufsfeuerwehr',
-                'Werkfeuerwehr',
-            ]) . ' ' . fake()->city();
+            'Freiwillige Feuerwehr',
+            'Berufsfeuerwehr',
+            'Werkfeuerwehr',
+        ]).' '.fake()->city();
     }
 }

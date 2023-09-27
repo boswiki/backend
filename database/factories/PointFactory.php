@@ -8,14 +8,12 @@ use Domain\Stations\Models\Station;
 use Domain\Users\Models\User;
 use Domain\Vehicles\Models\Vehicle;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Points\Models\Point>
  */
 class PointFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *

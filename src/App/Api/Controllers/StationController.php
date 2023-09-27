@@ -3,13 +3,10 @@
 namespace App\Api\Controllers;
 
 use App\Controller;
-use Domain\Stations\Actions\ShowStations;
 use Domain\Stations\Models\Station;
 use Domain\Stations\Resources\StationIndexResource;
 use Domain\Stations\Resources\StationResource;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use function Laravel\Prompts\select;
 
 class StationController extends Controller
 {

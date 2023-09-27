@@ -5,14 +5,12 @@ namespace Database\Factories;
 use Domain\Feedback\Enums\Feedback;
 use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Feedback\Models\Feedback>
  */
 class FeedbackFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *
@@ -32,10 +30,10 @@ class FeedbackFactory extends Factory
                 Feedback::OTHER,
                 Feedback::IDEA,
                 Feedback::BUG,
-                Feedback::PRAISE
+                Feedback::PRAISE,
             ]),
             'content' => $this->faker->realText(),
-            'user_id' => User::factory()
+            'user_id' => User::factory(),
         ];
     }
 }

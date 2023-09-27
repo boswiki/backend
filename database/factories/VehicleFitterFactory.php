@@ -5,14 +5,12 @@ namespace Database\Factories;
 use Domain\Users\Models\User;
 use Domain\Vehicles\Models\VehicleFitter;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Vehicles\Models\VehicleManufacturer>
  */
 class VehicleFitterFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *
@@ -31,7 +29,7 @@ class VehicleFitterFactory extends Factory
             'user_id' => User::factory(),
             'name' => $this->faker->company(),
             'email' => $this->faker->companyEmail(),
-            'website' => $this->faker->url()
+            'website' => $this->faker->url(),
         ];
     }
 }

@@ -9,21 +9,22 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Support\Traits\HasLocation;
+use MatanYadaev\EloquentSpatial\Objects\MultiPolygon;
+use MatanYadaev\EloquentSpatial\Objects\Point;
+use MatanYadaev\EloquentSpatial\Objects\Polygon;
 
 class District extends Model
 {
-    use HasFactory, HasUuids, HasLocation;
-
-    protected $hidden = [
-      'location', 'border', 'bounding_box'
-    ];
+    use HasFactory, HasUuids;
 
     protected $guarded = [];
 
     protected $casts = [
         'created_at' => 'date',
-        'description' => 'array'
+        'description' => 'array',
+        'location' => Point::class,
+        'border' => Polygon::class,
+        'bounding_box' => Polygon::class,
     ];
 
     protected static function newFactory()

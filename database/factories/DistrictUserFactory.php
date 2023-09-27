@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use \Domain\Stations\Models\District;
+use Domain\Stations\Models\District;
 use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -20,7 +20,7 @@ class DistrictUserFactory extends Factory
     {
         return [
             'user_id' => User::factory(),
-            'district_id' => District::factory()
+            'district_id' => District::factory(),
         ];
     }
 }

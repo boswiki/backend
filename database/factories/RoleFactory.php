@@ -4,14 +4,12 @@ namespace Database\Factories;
 
 use Domain\Users\Models\Role;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Users\Models\Role>
  */
 class RoleFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *
@@ -28,7 +26,7 @@ class RoleFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'scopes' => '[]'
+            'scopes' => '[]',
         ];
     }
 }

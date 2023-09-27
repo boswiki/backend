@@ -2,18 +2,16 @@
 
 namespace Database\Factories;
 
-use Domain\Common\Models\Address;
 use Domain\Stations\Models\ControlCenter;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
+use MatanYadaev\EloquentSpatial\Enums\Srid;
+use MatanYadaev\EloquentSpatial\Objects\Point;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Domain\Stations\Models\ControlCenter>
  */
 class ControlCenterFactory extends Factory
 {
-
     /**
      * The name of the factory's corresponding model.
      *
@@ -29,8 +27,10 @@ class ControlCenterFactory extends Factory
     public function definition()
     {
         return [
-            'name' => 'Leitstelle ' . $this->faker->city(),
-            'location' => DB::raw('ST_SRID(Point('.$this->faker->longitude().', '.$this->faker->latitude().'), 4326)'),
+            'name' => 'Leitstelle '.$this->faker->city(),
+            'location' => new Point($this->faker->latitude, $this->faker->longitude, Srid::WGS84->value),
+            'website' => $this->faker->url(),
+            'osm_id' => 'node/'.$this->faker->uuid(),
         ];
     }
 }

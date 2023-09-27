@@ -17,19 +17,19 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Support\Str;
-use Support\Traits\HasLocation;
+use MatanYadaev\EloquentSpatial\Objects\Point;
+use MatanYadaev\EloquentSpatial\Traits\HasSpatial;
 
 class Station extends Model
 {
-    use HasFactory, HasAddresses, HasUuids, HasLocation;
+    use HasAddresses, HasFactory, HasSpatial, HasUuids;
 
     protected $guarded = [];
-    protected $hidden = ['location'];
 
     protected $casts = [
         'created_at' => 'date',
-        'description' => 'array'
+        'description' => 'array',
+        'location' => Point::class,
     ];
 
     protected static function newFactory()
