@@ -35,7 +35,7 @@ class CategoryAndStationTypeSeeder extends Seeder
                 'Autobahnpolizeiwache',
                 'Bereitschaftspolizei',
             ],
-            'Technisches Hilfswerk (THW)' => [
+            'Technisches Hilfswerk' => [
                 'THW-Ortsverband',
             ],
             'Sonstige' => [
