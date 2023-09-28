@@ -10,7 +10,7 @@ return new class extends Migration
     {
         Schema::table('control_centers', function (Blueprint $table) {
             $table->string('website')->nullable();
-            $table->string('osm_id');
+            $table->string('osm_id')->nullable();
         });
     }
 };
