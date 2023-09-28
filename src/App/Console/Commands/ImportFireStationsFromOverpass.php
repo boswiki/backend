@@ -107,7 +107,7 @@ class ImportFireStationsFromOverpass extends Command
             'id' => '00000000-0000-0000-0000-000000000000',
             'name' => 'AUTO_IMPORT_DISTRICT',
             'location' => new Point(48.137146, 11.575562, Srid::WGS84->value),
-            'type' => \Domain\Stations\Enums\District::FEDERAL_STATE->value,
+            'type' => \Domain\Stations\Enums\AdministrativeDivision::STATE->value,
         ]);
 
         ControlCenter::updateOrCreate(['id' => '00000000-0000-0000-0000-000000000000'], [

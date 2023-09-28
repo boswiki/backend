@@ -31,9 +31,9 @@ class DistrictFactory extends Factory
         return [
             'name' => $this->faker->country(),
             'type' => $this->faker->randomElement([
-                \Domain\Stations\Enums\District::FEDERAL_STATE->value,
-                \Domain\Stations\Enums\District::STATE_DISTRICT->value,
-                \Domain\Stations\Enums\District::CITY_DISTRICT->value,
+                \Domain\Stations\Enums\AdministrativeDivision::FEDERAL_STATE->value,
+                \Domain\Stations\Enums\AdministrativeDivision::STATE_DISTRICT->value,
+                \Domain\Stations\Enums\AdministrativeDivision::CITY_DISTRICT->value,
             ]),
             'bounding_box' => new Polygon([new LineString([
                 new Point(12.455363273620605, 41.90746728266806),

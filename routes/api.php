@@ -10,8 +10,9 @@ Route::resource('stations', \App\Api\Controllers\StationController::class);
 
 Route::get('/statistics', \App\Api\Controllers\StatisticsController::class);
 
-Route::get('/districts', fn (Request $request) => \Domain\Stations\Models\District::query()
+Route::get('/control-centers', fn (Request $request) => \Domain\Stations\Models\District::query()
     ->select('id', 'name')
+    ->whereType(\Domain\Stations\Enums\AdministrativeDivision::STATE->value)
     ->with('controlCenters:id,district_id,name')
     ->get()
 );
