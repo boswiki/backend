@@ -9,3 +9,9 @@ Route::get('/categories', [\App\Api\Controllers\CategoryController::class, 'inde
 Route::resource('stations', \App\Api\Controllers\StationController::class);
 
 Route::get('/statistics', \App\Api\Controllers\StatisticsController::class);
+
+Route::get('/districts', fn (Request $request) => \Domain\Stations\Models\District::query()
+    ->select('id', 'name')
+    ->with('controlCenters:id,district_id,name')
+    ->get()
+);
