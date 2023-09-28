@@ -4,9 +4,7 @@ namespace Database\Seeders;
 
 use Domain\Stations\Models\District;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str;
 use MatanYadaev\EloquentSpatial\Enums\Srid;
 use MatanYadaev\EloquentSpatial\Objects\LineString;
 use MatanYadaev\EloquentSpatial\Objects\MultiPolygon;
@@ -52,8 +50,8 @@ class DistrictSeeder extends Seeder
         $data = json_decode(File::get(database_path('fixtures/federal-borders.geojson')), true);
 
         $handlers = [
-            'Polygon' => fn($coordinates) => $this->handlePolygon($coordinates),
-            'MultiPolygon' => fn($coordinates) => $this->handleMultiPolygon($coordinates),
+            'Polygon' => fn ($coordinates) => $this->handlePolygon($coordinates),
+            'MultiPolygon' => fn ($coordinates) => $this->handleMultiPolygon($coordinates),
         ];
 
         collect($data['features'])->each(function ($feature) use ($handlers) {
@@ -61,7 +59,9 @@ class DistrictSeeder extends Seeder
             $this->command->info($feature['properties']['name']);
             $this->command->info($district->name);
 
-            if (!$district) return;
+            if (! $district) {
+                return;
+            }
 
             $geometry = $feature['geometry']['type'];
             if (isset($handlers[$geometry])) {
@@ -74,14 +74,14 @@ class DistrictSeeder extends Seeder
     private function handlePolygon($coordinates): Polygon
     {
         $points = collect($coordinates[0])
-            ->map(fn($coord) => new Point($coord[1], $coord[0]))
+            ->map(fn ($coord) => new Point($coord[1], $coord[0]))
             ->all();
 
         // Schließen Sie den Ring
         $points[] = $points[0];
 
         return new Polygon([
-            new LineString($points, Srid::WGS84->value)
+            new LineString($points, Srid::WGS84->value),
         ], Srid::WGS84->value);
     }
 
