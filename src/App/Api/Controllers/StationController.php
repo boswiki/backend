@@ -7,6 +7,7 @@ use Domain\Stations\Models\Station;
 use Domain\Stations\Resources\StationIndexResource;
 use Domain\Stations\Resources\StationResource;
 use Illuminate\Http\Request;
+use MatanYadaev\EloquentSpatial\Objects\Point;
 
 class StationController extends Controller
 {
@@ -19,6 +20,20 @@ class StationController extends Controller
     {
         return StationResource::make(
             $station->load('author', 'district', 'address', 'stationType', 'controlCenter')
-        );
+        )->additional([
+            'nearbyStations' =>
+                Station::query()
+                    ->select('id', 'name')
+                    ->whereDistance(
+                        'location',
+                        $point = new Point($station->location->latitude, $station->location->longitude, 4326),
+                        '<',
+                        5000
+                    )
+                    ->withDistanceSphere('location', $point, 'distanceInMeters')
+                    ->orderByDistance('location', $point, 'asc')
+                    ->where('id', '!=', $station->id)
+                    ->get()
+        ]);
     }
 }
