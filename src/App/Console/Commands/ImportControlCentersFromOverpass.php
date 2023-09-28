@@ -76,8 +76,6 @@ class ImportControlCentersFromOverpass extends Command
             ? "{$geometry['coordinates'][1]} {$geometry['coordinates'][0]}"
             : $this->determinePolygonCenter(collect($geometry['coordinates'][0]));
 
-        $this->info($coordinates[0].' '.$coordinates[1]);
-
         $controlCenter = ControlCenter::updateOrCreate(['osm_id' => $osmId], [
             'name' => $properties['name'],
             'location' => new Point($coordinates[0], $coordinates[1], Srid::WGS84->value),
