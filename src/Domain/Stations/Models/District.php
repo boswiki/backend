@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use MatanYadaev\EloquentSpatial\Objects\MultiPolygon;
 use MatanYadaev\EloquentSpatial\Objects\Point;
 use MatanYadaev\EloquentSpatial\Objects\Polygon;
 
@@ -43,5 +42,10 @@ class District extends Model
             ->belongsToMany(User::class)
             ->as('users')
             ->using(StationUser::class);
+    }
+
+    public function controlCenters(): HasMany
+    {
+        return $this->hasMany(ControlCenter::class);
     }
 }
