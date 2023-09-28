@@ -1,0 +1,231 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:36:36Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/605238820",
+        "addr:housenumber": "7",
+        "addr:postcode": "06526",
+        "addr:street": "Schartweg",
+        "alt_name": "Leitstelle Mansfeld-Südharz",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Mansfeld-Südharz",
+        "short_name": "ILS Mansfeld-Südharz"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.2942748,
+              51.4659099
+            ],
+            [
+              11.2943219,
+              51.4658307
+            ],
+            [
+              11.2942744,
+              51.4658198
+            ],
+            [
+              11.2943076,
+              51.4657637
+            ],
+            [
+              11.2943542,
+              51.4657745
+            ],
+            [
+              11.294405,
+              51.4656888
+            ],
+            [
+              11.2945245,
+              51.4657163
+            ],
+            [
+              11.2943931,
+              51.4659376
+            ],
+            [
+              11.2944724,
+              51.4659558
+            ],
+            [
+              11.294425,
+              51.4660357
+            ],
+            [
+              11.2941398,
+              51.46597
+            ],
+            [
+              11.2941874,
+              51.4658898
+            ],
+            [
+              11.2942748,
+              51.4659099
+            ]
+          ]
+        ]
+      },
+      "id": "way/605238820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3416109297",
+        "addr:city": "Haldensleben",
+        "addr:housenumber": "8",
+        "addr:postcode": "39340",
+        "addr:street": "Kronesruhe",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle des Bördekreis",
+        "short_name": "ILS Bördekreis",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4007695,
+          52.2804275
+        ]
+      },
+      "id": "node/3416109297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740810717",
+        "addr:city": "Dessau-Roßlau",
+        "addr:country": "DE",
+        "addr:housenumber": "8",
+        "addr:postcode": "06849",
+        "addr:street": "Innsbrucker Straße",
+        "alt_name": "Leitstelle Dessau-Roßlau",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Dessau-Roßlau",
+        "short_name": "ILS Dessau-Roßlau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2389294,
+          51.8088984
+        ]
+      },
+      "id": "node/5740810717"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740823131",
+        "alt_name": "Leitstelle Harz",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Harz",
+        "note": "Befindet sich in Haus 3",
+        "short_name": "ILS Harz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.057745,
+          51.8880765
+        ]
+      },
+      "id": "node/5740823131"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740965194",
+        "emergency": "control_centre",
+        "name": "Leitstelle Burgenlandkreis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8239444,
+          51.1508406
+        ]
+      },
+      "id": "node/5740965194"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740968139",
+        "description": " Integrierte Leitstelle für den Brand-, Katastropenschutz und Rettungsdienst des Landkreises Stendal und des Altmarkkreises Salzwedel",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Altmark",
+        "short_name": "ILS Altmark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8528479,
+          52.6129833
+        ]
+      },
+      "id": "node/5740968139"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740974950",
+        "emergency": "control_centre",
+        "name": "Leitstelle Salzlandkreis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5795815,
+          51.8519554
+        ]
+      },
+      "id": "node/5740974950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740986165",
+        "addr:housenumber": "4b",
+        "addr:postcode": "06886",
+        "addr:street": "Erich-Weinert-Straße",
+        "emergency": "control_centre",
+        "name": "Leitstelle Wittenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6061048,
+          51.8691846
+        ]
+      },
+      "id": "node/5740986165"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6252657751",
+        "emergency": "control_centre",
+        "name": "Leitstelle Magdeburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6291429,
+          52.1320833
+        ]
+      },
+      "id": "node/6252657751"
+    }
+  ]
+}

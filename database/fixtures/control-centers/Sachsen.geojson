@@ -1,0 +1,145 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:35:36Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1188129269",
+        "addr:city": "Chemnitz",
+        "addr:country": "DE",
+        "addr:housename": "IRLS Chemnitz/Erzgebirge/Mittelsachsen",
+        "addr:housenumber": "15",
+        "addr:postcode": "09112",
+        "addr:street": "Schadestraße",
+        "alt_name": "Leitstelle Chemnitz",
+        "building": "fire_station",
+        "emergency": "control_centre",
+        "name": "Integrierte Regionalleitstelle Chemnitz",
+        "short_name": "IRLS Chemnitz"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.9177445,
+              50.8277125
+            ],
+            [
+              12.9175877,
+              50.8276779
+            ],
+            [
+              12.9173729,
+              50.8276381
+            ],
+            [
+              12.9174092,
+              50.8275622
+            ],
+            [
+              12.9172343,
+              50.8275371
+            ],
+            [
+              12.9171641,
+              50.8275638
+            ],
+            [
+              12.9170415,
+              50.8274656
+            ],
+            [
+              12.9172526,
+              50.8273594
+            ],
+            [
+              12.9172976,
+              50.8273966
+            ],
+            [
+              12.9174054,
+              50.827482
+            ],
+            [
+              12.917788,
+              50.8275412
+            ],
+            [
+              12.917824,
+              50.8275475
+            ],
+            [
+              12.9177775,
+              50.8276808
+            ],
+            [
+              12.9177561,
+              50.8276778
+            ],
+            [
+              12.9177445,
+              50.8277125
+            ]
+          ]
+        ]
+      },
+      "id": "way/1188129269"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740635421",
+        "alt_name": "Leitstelle Dresden",
+        "emergency": "control_centre",
+        "name": "Integrierte Regionalleitstelle Dresden",
+        "short_name": "IRLS Dresden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6927851,
+          51.0727492
+        ]
+      },
+      "id": "node/5740635421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740641621",
+        "emergency": "control_centre",
+        "name": "Leitstelle Freiberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3551702,
+          50.9126936
+        ]
+      },
+      "id": "node/5740641621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740690336",
+        "alt_name": "Leitstelle Zwickau",
+        "emergency": "control_centre",
+        "name": "Integrierte Rettungslleitstelle Zwickau",
+        "short_name": "IRLS Zwickau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4848017,
+          50.7248031
+        ]
+      },
+      "id": "node/5740690336"
+    }
+  ]
+}

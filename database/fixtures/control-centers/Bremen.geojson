@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:33:36Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740497613",
+        "addr:city": "Bremen",
+        "addr:country": "DE",
+        "addr:housenumber": "24",
+        "addr:postcode": "28195",
+        "addr:street": "Am Wandrahm",
+        "admin_level": "6",
+        "alt_name": "Leitstelle Bremen",
+        "emergency": "control_centre",
+        "government": "emergency",
+        "name": "Feuerwehr- und Rettungsleitstelle Bremen",
+        "office": "government",
+        "short_name": "FRLSt Bremen",
+        "website": "https://www.feuerwehr.bremen.de/standorte/feuerwehr-und-rettungsleitstelle-20564"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8014462,
+          53.0835684
+        ]
+      },
+      "id": "node/5740497613"
+    }
+  ]
+}

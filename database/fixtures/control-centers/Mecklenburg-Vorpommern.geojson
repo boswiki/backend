@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:34:34Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/121928888",
+        "addr:city": "Stralsund",
+        "addr:country": "DE",
+        "addr:housenumber": "13",
+        "addr:postcode": "18437",
+        "addr:street": "Am Umspannwerk",
+        "alt_name": "Regionalleitstelle Vorpommern-Rügen",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Regionalleitstelle Vorpommern-Rügen",
+        "short_name": "IRLS Vorpommern-Rügen"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.0841487,
+              54.2857705
+            ],
+            [
+              13.0846636,
+              54.2857509
+            ],
+            [
+              13.0846775,
+              54.2858751
+            ],
+            [
+              13.0841626,
+              54.2858947
+            ],
+            [
+              13.0841577,
+              54.2858512
+            ],
+            [
+              13.0841552,
+              54.2858284
+            ],
+            [
+              13.0841487,
+              54.2857705
+            ]
+          ]
+        ]
+      },
+      "id": "way/121928888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4290002329",
+        "addr:housenumber": "63a",
+        "addr:street": "Wolgaster Straße",
+        "alt_name": "Leitstelle Vorpommern-Greifswald",
+        "contact:website": "https://www.kreis-vg.de/index.php?object=tx,3079.2&ModID=10&FID=3079.490.1eigenbetrieb-rettungsdienst/integrierte-leitstelle/",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Vorpommern-Greifswald",
+        "short_name": "ILS Vorpommern-Greifswald"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4177581,
+          54.0920101
+        ]
+      },
+      "id": "node/4290002329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719665391",
+        "alt_name": "Leitstelle Mitte",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Mitte",
+        "short_name": "ILS Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9038584,
+          54.1060301
+        ]
+      },
+      "id": "node/5719665391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719686746",
+        "addr:country": "DE",
+        "addr:housename": "24",
+        "addr:street": "Erich-Schlesinger-Straße",
+        "alt_name": "Leitststelle Rostock",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitststelle Rostock",
+        "short_name": "ILS Rostrock"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1166221,
+          54.0783707
+        ]
+      },
+      "id": "node/5719686746"
+    }
+  ]
+}

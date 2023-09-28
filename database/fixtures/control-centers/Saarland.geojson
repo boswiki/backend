@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:35:36Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206235980",
+        "addr:city": "Saarbrücken",
+        "addr:housenumber": "5",
+        "addr:postcode": "66119",
+        "addr:street": "Winterberg",
+        "building": "office",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle des Saarlandes",
+        "office": "yes",
+        "operator": "Zweckverband für Rettungsdienst und Feuerwehralarmierung Saar",
+        "operator:wikidata": "Q15855862",
+        "short_name": "ILS Saarland"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.9997638,
+              49.2206313
+            ],
+            [
+              6.9997648,
+              49.2206719
+            ],
+            [
+              6.9997663,
+              49.2207366
+            ],
+            [
+              6.999686,
+              49.2207373
+            ],
+            [
+              6.9996843,
+              49.2206502
+            ],
+            [
+              6.999663,
+              49.2206639
+            ],
+            [
+              6.9994485,
+              49.220526
+            ],
+            [
+              6.9994628,
+              49.2205161
+            ],
+            [
+              6.9994745,
+              49.220508
+            ],
+            [
+              6.9995834,
+              49.220433
+            ],
+            [
+              6.9996376,
+              49.2204694
+            ],
+            [
+              6.9998236,
+              49.220592
+            ],
+            [
+              6.9997638,
+              49.2206313
+            ]
+          ]
+        ]
+      },
+      "id": "way/206235980"
+    }
+  ]
+}

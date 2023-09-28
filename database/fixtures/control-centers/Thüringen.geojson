@@ -1,0 +1,296 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:36:36Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/124069616",
+        "addr:city": "Saalfeld/Saale",
+        "addr:housenumber": "34",
+        "addr:postcode": "07318",
+        "addr:street": "Zum Eckardtsanger",
+        "alt_name": "Leitstelle Saalfeld",
+        "building": "yes",
+        "emergency": "control_centre",
+        "government": "emergency_call_center",
+        "name": "Rettungsleitstelle Saalfeld",
+        "short_name": "RLSt Saalfeld"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.3415289,
+              50.645525
+            ],
+            [
+              11.3413652,
+              50.6454432
+            ],
+            [
+              11.3416354,
+              50.645226
+            ],
+            [
+              11.341799,
+              50.6453079
+            ],
+            [
+              11.3415289,
+              50.645525
+            ]
+          ]
+        ]
+      },
+      "id": "way/124069616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/693284943",
+        "addr:city": "Mühlhausen/Thüringen",
+        "addr:housenumber": "17",
+        "addr:postcode": "99974",
+        "addr:street": "Böhntalsweg",
+        "alt_name": "Leitstelle Unstrut-Hainch",
+        "building": "public",
+        "building:levels": "2",
+        "country": "DE",
+        "emergency": "control_centre",
+        "emergency_telephone_code": "112",
+        "fax": "+49 3601 83 18 44",
+        "name": "Integrierte Leitstelle Unstrut-Hainich",
+        "operator": "Landkreis Unstrut-Hainich",
+        "phone": "+49 3601 40 30 80;+49 3601 19222",
+        "short_name": "ILS Unstrut-Hainich",
+        "smoking": "outside",
+        "website": "https://www.unstrut-hainich-kreis.de/index.php/fachdienst-brand-und-katastrophenschutz/leitstelle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.4406282,
+              51.1991639
+            ],
+            [
+              10.4405877,
+              51.1991532
+            ],
+            [
+              10.4406561,
+              51.1990521
+            ],
+            [
+              10.4408672,
+              51.1991082
+            ],
+            [
+              10.4407989,
+              51.1992092
+            ],
+            [
+              10.4406911,
+              51.1991806
+            ],
+            [
+              10.4406282,
+              51.1991639
+            ]
+          ]
+        ]
+      },
+      "id": "way/693284943"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719910147",
+        "alt_name": "Leitstelle Weimarer Land",
+        "emergency": "control_centre",
+        "name": "Leitstelle Weimarer Land"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5184623,
+          51.0257055
+        ]
+      },
+      "id": "node/5719910147"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5720072884",
+        "emergency": "control_centre",
+        "name": "Leitstelle des Ilm-Kreises",
+        "short_name": "Leitstelle Ilm-Kreis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9502183,
+          50.8357056
+        ]
+      },
+      "id": "node/5720072884"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5720077922",
+        "alt_name": "Leitstelle Wartburgkreis",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Wartburgkreis",
+        "short_name": "ZLST Wartburgkreis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.312153,
+          50.9913563
+        ]
+      },
+      "id": "node/5720077922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5720081734",
+        "alt_name": "Leitstelle Eichsfeld",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Eichsfeld",
+        "short_name": "ZLST Eichsfeld"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.132292,
+          51.3776549
+        ]
+      },
+      "id": "node/5720081734"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5720087059",
+        "alt_name": "Leitstelle Erfurt",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Erfurt",
+        "short_name": "ILS Erfurt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9998691,
+          50.9929261
+        ]
+      },
+      "id": "node/5720087059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5720090421",
+        "alt_name": "Leitstelle Gera",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Gera",
+        "short_name": "ILS Gera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0786588,
+          50.8940104
+        ]
+      },
+      "id": "node/5720090421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5720096202",
+        "alt_name": "Leitstelle Gotha",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Gotha",
+        "short_name": "ZLST Gotha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6933686,
+          50.947852
+        ]
+      },
+      "id": "node/5720096202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740442750",
+        "alt_name": "Leitstelle Schmalkalden-Meiningen",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Schmalkalden-Meiningen",
+        "short_name": "ZLST Schmalkalden-Meiningen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4165255,
+          50.593266
+        ]
+      },
+      "id": "node/5740442750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740460527",
+        "alt_name": "Leitstelle Suhl",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Suhl",
+        "short_name": "ZLST Suhl"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6922231,
+          50.6467626
+        ]
+      },
+      "id": "node/5740460527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7903406685",
+        "addr:city": "Jena",
+        "addr:housenumber": "28",
+        "addr:postcode": "07743",
+        "addr:street": "Am Anger",
+        "emergency": "control_centre",
+        "government": "emergency_call_center",
+        "name": "Regionalleitstelle Jena",
+        "office": "government",
+        "opening_hours": "24/7",
+        "website": "https://feuerwehr.jena.de",
+        "wikimedia_commons": "File:Feuerwehr Jena gesehen vom Jentower.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5925203,
+          50.9323055
+        ]
+      },
+      "id": "node/7903406685"
+    }
+  ]
+}

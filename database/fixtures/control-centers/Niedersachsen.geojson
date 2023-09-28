@@ -1,0 +1,603 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:34:34Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/97218373",
+        "alt_name": "Leitstelle Vechta",
+        "building:part": "service",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Vechta",
+        "short_name": "ILS Vechta"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2877122,
+              52.7338489
+            ],
+            [
+              8.2874762,
+              52.7338309
+            ],
+            [
+              8.2875055,
+              52.7336782
+            ],
+            [
+              8.2875238,
+              52.7335995
+            ],
+            [
+              8.2877041,
+              52.7336128
+            ],
+            [
+              8.2876754,
+              52.7337553
+            ],
+            [
+              8.2877302,
+              52.7337593
+            ],
+            [
+              8.2877122,
+              52.7338489
+            ]
+          ]
+        ]
+      },
+      "id": "way/97218373"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/112668642",
+        "addr:city": "Oldenburg",
+        "addr:country": "DE",
+        "addr:housenumber": "30",
+        "addr:postcode": "26121",
+        "addr:street": "Friedhofsweg",
+        "alt_name": "Leitstelle Oldenburger Land",
+        "building": "yes",
+        "emergency": "control_centre",
+        "height": "9",
+        "name": "Integrierte Leitstelle Oldenburger Land AöR",
+        "roof:shape": "flat",
+        "short_name": "ILS Oldenburger Land"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.1990365,
+              53.153436
+            ],
+            [
+              8.1991202,
+              53.1531525
+            ],
+            [
+              8.1993022,
+              53.153172
+            ],
+            [
+              8.1993567,
+              53.1531775
+            ],
+            [
+              8.1996926,
+              53.1532133
+            ],
+            [
+              8.1996089,
+              53.1534968
+            ],
+            [
+              8.1990365,
+              53.153436
+            ]
+          ]
+        ]
+      },
+      "id": "way/112668642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/135267487",
+        "addr:city": "Emden",
+        "addr:country": "DE",
+        "addr:housenumber": "12",
+        "addr:postcode": "26721",
+        "addr:street": "Hermann-Löns-Straße",
+        "addr:suburb": "Barenburg",
+        "alt_name": "Rettungsleitstelle Emden",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Emden",
+        "short_name": "ILS Emden"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.2158857,
+              53.3757959
+            ],
+            [
+              7.2158652,
+              53.3756941
+            ],
+            [
+              7.2162794,
+              53.3756645
+            ],
+            [
+              7.2162999,
+              53.3757663
+            ],
+            [
+              7.2158857,
+              53.3757959
+            ]
+          ]
+        ]
+      },
+      "id": "way/135267487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/177143593",
+        "addr:city": "Wittmund",
+        "addr:country": "DE",
+        "addr:housenumber": "4",
+        "addr:postcode": "26409",
+        "addr:street": "Agnes-von-Rietberg-Straße",
+        "alt_name": "Leitstelle Ostfriesland",
+        "building": "yes",
+        "building:levels": "2",
+        "emergency": "control_centre",
+        "name": "Kooperative Regionalleitstelle Ostfriesland",
+        "phone": "+49 4462 2043-0",
+        "short_name": "KRL Ostfriesland",
+        "website": "http://www.krlo.de",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.7910734,
+              53.5707883
+            ],
+            [
+              7.7914456,
+              53.5709679
+            ],
+            [
+              7.7912636,
+              53.5711008
+            ],
+            [
+              7.7908915,
+              53.5709212
+            ],
+            [
+              7.7910734,
+              53.5707883
+            ]
+          ]
+        ]
+      },
+      "id": "way/177143593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/229389897",
+        "addr:housenumber": "20",
+        "addr:street": "Jahnstraße",
+        "alt_name": "Leitstelle Schaumburg/Nienburg",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Regionalleitstelle Schaumburg/Nienburg",
+        "short_name": "IRLS Schaumburg/Nienburg"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.19048,
+              52.3134875
+            ],
+            [
+              9.1908142,
+              52.313487
+            ],
+            [
+              9.1908146,
+              52.3135932
+            ],
+            [
+              9.1904804,
+              52.3135937
+            ],
+            [
+              9.19048,
+              52.3134875
+            ]
+          ]
+        ]
+      },
+      "id": "way/229389897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1137218116",
+        "addr:city": "Stade",
+        "addr:country": "DE",
+        "addr:housenumber": "3",
+        "addr:postcode": "21684",
+        "addr:street": "Ohle Kamp",
+        "admin_level": "6",
+        "emergency": "control_centre",
+        "government": "emergency",
+        "name": "Feuerwehr- und Rettungsleitstelle Stade",
+        "office": "government",
+        "short_name": "Leitstelle Stade",
+        "website": "https://www.landkreis-stade.de/buergerservice/dienstleistungen/feuerwehr-rettungsleitstelle-901000069-20350.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.407873,
+          53.5792251
+        ]
+      },
+      "id": "node/1137218116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3269828963",
+        "addr:city": "Northeim",
+        "addr:housenumber": "3",
+        "addr:postcode": "37154",
+        "addr:street": "Von-Menzel-Straße",
+        "alt_name": "Leitstelle Northeim",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Northeim",
+        "short_name": "ILS Northeim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9905929,
+          51.6935507
+        ]
+      },
+      "id": "node/3269828963"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765589297",
+        "addr:city": "Osnabrück",
+        "addr:housenumber": "1",
+        "addr:postcode": "49082",
+        "addr:street": "Am Schölerberg",
+        "alt_name": "Leitstelle Osnabrück",
+        "emergency": "control_centre",
+        "name": "Regionalleitstelle Osnabrück kAöR",
+        "office": "government",
+        "phone": "+49 541 500305112",
+        "short_name": "KRLS Osnabrück",
+        "website": "https://www.lst-os.de/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0688258,
+          52.2481794
+        ]
+      },
+      "id": "node/5765589297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765589298",
+        "alt_name": "Leitstelle Grafschaft Bentheim",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Grafschaft Bentheim",
+        "short_name": "ILS Grafschaft Bentheim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0612517,
+          52.4331388
+        ]
+      },
+      "id": "node/5765589298"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765603232",
+        "alt_name": "Leitstelle Celle",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Celle",
+        "short_name": "ILS Celle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0725751,
+          52.6230483
+        ]
+      },
+      "id": "node/5765603232"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765603233",
+        "alt_name": "Leitstelle Friesland-Wilhelmshaven",
+        "email": "leitstelle@gls-fri-whv.de",
+        "emergency": "control_centre",
+        "fax": "+4944219818180",
+        "name": "Integrierte Leitstelle Friesland-Wilhelmshaven",
+        "phone": "+49442198180",
+        "short_name": "ILS Friesland-Wilhelmshaven"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1156897,
+          53.5215845
+        ]
+      },
+      "id": "node/5765603233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765616648",
+        "alt_name": "Leitstelle Lüneburg",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Lüneburg",
+        "short_name": "ILS Lüneburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4116515,
+          53.2534912
+        ]
+      },
+      "id": "node/5765616648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765621643",
+        "alt_name": "Leitstelle Soltau",
+        "contact:website": "https://www.heidekreis.de/home/gesundheit-soziales/rettungsdienst-und-katastrophenschutz/feuerwehreinsatz-und-rettungsleitstelle.aspx",
+        "emergency": "control_centre",
+        "name": "Feuerwehreinsatz- und Rettungsleitstelle Heidekreis",
+        "operator": "Landkreis Heidekreis",
+        "operator:wikidata": "Q5922",
+        "short_name": "FRL Heidekreis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8378004,
+          52.9999904
+        ]
+      },
+      "id": "node/5765621643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765667126",
+        "alt_name": "Leitstelle Harburg",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Harburg",
+        "short_name": "ILS Harburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2038826,
+          53.361523
+        ]
+      },
+      "id": "node/5765667126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765667127",
+        "addr:city": "Verden (Aller)",
+        "addr:country": "DE",
+        "addr:housenumber": "67",
+        "addr:postcode": "27283",
+        "addr:street": "Lindhooper Straße",
+        "admin_level": "6",
+        "emergency": "control_centre",
+        "government": "emergency",
+        "name": "Rettungs- und Feuerwehrleitstelle Verden",
+        "office": "government",
+        "short_name": "Leitstelle Verden",
+        "website": "https://www.landkreis-verden.de/verkehr-sicherheit-ordnung/brandschutz-rettungsdienst-katastrophenschutz/rettungs-und-feuerwehrleitstelle/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.25004,
+          52.927141
+        ]
+      },
+      "id": "node/5765667127"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5769730171",
+        "alt_name": "Leitstelle Diepholz",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Diepholz",
+        "short_name": "ILS Diepholz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3750884,
+          52.6093764
+        ]
+      },
+      "id": "node/5769730171"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5769756051",
+        "alt_name": "Leitstelle Weserbergland",
+        "emergency": "control_centre",
+        "name": "Kooperative Regionalleitstelle Weserbergland",
+        "short_name": "KRL",
+        "website": "http://www.krl-weserbergland.eu/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3578264,
+          52.0977182
+        ]
+      },
+      "id": "node/5769756051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5769770577",
+        "alt_name": "Leitstelle Hildesheim",
+        "emergency": "control_centre",
+        "name": "Integrierte Regionalleitstelle Hildesheim",
+        "short_name": "IRLS Hildesheim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9598152,
+          52.1591019
+        ]
+      },
+      "id": "node/5769770577"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5769770578",
+        "alt_name": "Leitstelle Hannover",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Hannover",
+        "short_name": "ILS Hannover"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.724992,
+          52.3719499
+        ]
+      },
+      "id": "node/5769770578"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5769793504",
+        "alt_name": "Leitstelle Salzgitter",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Salzgitter",
+        "short_name": "ILS Salzgitter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3462798,
+          52.1519505
+        ]
+      },
+      "id": "node/5769793504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5769797350",
+        "alt_name": "Leitstelle Wolfsburg/Helmstedt",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Wolfsburg/Helmstedt",
+        "short_name": "ILS Wolfsburg/Helmstedt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8034336,
+          52.426704
+        ]
+      },
+      "id": "node/5769797350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5769878560",
+        "alt_name": "Leitstelle Uelzen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Uelzen",
+        "short_name": "ILS Uelzen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5580016,
+          52.9617068
+        ]
+      },
+      "id": "node/5769878560"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5769878561",
+        "emergency": "control_centre",
+        "name": "Leitstelle Goslar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4402226,
+          51.9114626
+        ]
+      },
+      "id": "node/5769878561"
+    }
+  ]
+}

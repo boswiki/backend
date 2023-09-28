@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:33:36Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1944383183",
+        "addr:city": "Eberswalde",
+        "addr:housenumber": "41a",
+        "addr:postcode": "16227",
+        "addr:street": "Eberswalder Straße",
+        "alt_name": "Leitstelle Nord Ost",
+        "emergency": "control_centre",
+        "name": "Regionalleitstelle Nord Ost",
+        "operator": "Landkreis Barnim",
+        "short_name": "RLS Nord Ost"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.750377,
+          52.8384096
+        ]
+      },
+      "id": "node/1944383183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719578492",
+        "alt_name": "Regionalleitstelle Südwest",
+        "emergency": "control_centre",
+        "name": "Integrierte Regionalleitstelle Südwest",
+        "short_name": "IRLS Südwest"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.531407,
+          52.4180009
+        ]
+      },
+      "id": "node/5719578492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719588310",
+        "alt_name": "Leitstelle Lausitz",
+        "emergency": "control_centre",
+        "name": "Integrierte Regionalleitstelle Lausitz",
+        "short_name": "ILS Lausitz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.3379021,
+          51.7328827
+        ]
+      },
+      "id": "node/5719588310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719633354",
+        "alt_name": "Leitstelle Nordwest",
+        "emergency": "control_centre",
+        "name": "Integrierte Regionalleitstelle Nordwest",
+        "short_name": "IRLS Nordwest"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0709894,
+          52.4006364
+        ]
+      },
+      "id": "node/5719633354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719648324",
+        "alt_name": "Leitstelle Oderland",
+        "emergency": "control_centre",
+        "name": "Integrierte Regionalleitstelle Oderland",
+        "short_name": "IRLS Oderland"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5353506,
+          52.3310732
+        ]
+      },
+      "id": "node/5719648324"
+    }
+  ]
+}

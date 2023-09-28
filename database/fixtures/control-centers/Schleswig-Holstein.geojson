@@ -1,0 +1,204 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:36:36Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/115626245",
+        "addr:housenumber": "40",
+        "addr:postcode": "24955",
+        "addr:street": "Am Oxer",
+        "alt_name": "Leitstelle Nord",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Kooperative Regionalleitstelle Nord",
+        "short_name": "KRLS Nord"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.3691901,
+              54.7936751
+            ],
+            [
+              9.3697567,
+              54.7937814
+            ],
+            [
+              9.3696405,
+              54.7939872
+            ],
+            [
+              9.369074,
+              54.793881
+            ],
+            [
+              9.3691901,
+              54.7936751
+            ]
+          ]
+        ]
+      },
+      "id": "way/115626245"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184709906",
+        "addr:city": "Elmshorn",
+        "addr:housenumber": "19a",
+        "addr:postcode": "25337",
+        "addr:street": "Agnes-Karll-Allee",
+        "alt_name": "Leitstelle West",
+        "amenity": "fire_station",
+        "description": "Neue Rettungsleitstelle Fertigstellung 2018",
+        "emergency": "control_centre",
+        "name": "Kooperative Regionalleitstelle West",
+        "ref": "RLST",
+        "short_name": "KRLS West",
+        "start_date": "2018-07"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.6843565,
+              53.7540033
+            ],
+            [
+              9.6842524,
+              53.7540302
+            ],
+            [
+              9.6841156,
+              53.7535607
+            ],
+            [
+              9.6841425,
+              53.7535084
+            ],
+            [
+              9.6843061,
+              53.7534925
+            ],
+            [
+              9.6852126,
+              53.7534013
+            ],
+            [
+              9.6852289,
+              53.7534577
+            ],
+            [
+              9.6852872,
+              53.7534543
+            ],
+            [
+              9.6857437,
+              53.7534021
+            ],
+            [
+              9.6861206,
+              53.7534753
+            ],
+            [
+              9.6857397,
+              53.7540975
+            ],
+            [
+              9.6856169,
+              53.7542176
+            ],
+            [
+              9.6853548,
+              53.75413
+            ],
+            [
+              9.6852486,
+              53.7541024
+            ],
+            [
+              9.6843565,
+              53.7540033
+            ]
+          ]
+        ]
+      },
+      "id": "way/184709906"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5655053529",
+        "addr:city": "Bad Oldesloe",
+        "addr:country": "DE",
+        "addr:housenumber": "13",
+        "addr:postcode": "23843",
+        "addr:street": "Mommsenstraße",
+        "description": "Integrierte Rettungsleitstelle der Kreise Stormarn, Ostholstein und Herzogtum Lauenburg",
+        "email": "info@irls-sued.de",
+        "emergency": "control_centre",
+        "fax": "+49 4531 86812",
+        "government": "public_safety",
+        "name": "IRLS Süd",
+        "office": "government",
+        "operator": "Kreis Stormarn",
+        "phone": "+49 4531 81001",
+        "website": "https://www.irls-sued.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3802234,
+          53.8061096
+        ]
+      },
+      "id": "node/5655053529"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719781574",
+        "addr:housenumber": "325a",
+        "addr:postcode": "24116",
+        "addr:street": "Westring",
+        "alt_name": "Leitstelle Mitte",
+        "emergency": "control_centre",
+        "name": "Integrierte Regionalleitstelle Mitte",
+        "phone": "+49 431 5905-0",
+        "short_name": "IRLS Mitte",
+        "website": "http://www.irls-mitte.de/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.119985,
+          54.3312471
+        ]
+      },
+      "id": "node/5719781574"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719796880",
+        "emergency": "control_centre",
+        "name": "Leitstelle Lübeck"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6604321,
+          53.8822171
+        ]
+      },
+      "id": "node/5719796880"
+    }
+  ]
+}

@@ -1,0 +1,1542 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:34:34Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24850667",
+        "addr:city": "Bottrop",
+        "addr:country": "DE",
+        "addr:housenumber": "78-80",
+        "addr:postcode": "46236",
+        "addr:street": "Hans-Sachs-Straße",
+        "alt_name": "Leitstelle Bottrop",
+        "building": "garages",
+        "building:colour": "beige",
+        "building:levels": "2",
+        "building:material": "brick",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Bottrop",
+        "roof:material": "metal",
+        "roof:shape": "flat",
+        "short_name": "ILS Bottrop"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.9236154,
+              51.5319468
+            ],
+            [
+              6.9236548,
+              51.5317655
+            ],
+            [
+              6.9236336,
+              51.5317636
+            ],
+            [
+              6.9236428,
+              51.5317203
+            ],
+            [
+              6.9236424,
+              51.53172
+            ],
+            [
+              6.9236432,
+              51.5317154
+            ],
+            [
+              6.9238744,
+              51.5317341
+            ],
+            [
+              6.9239107,
+              51.5317379
+            ],
+            [
+              6.9238601,
+              51.5319679
+            ],
+            [
+              6.9236154,
+              51.5319468
+            ]
+          ]
+        ]
+      },
+      "id": "way/24850667"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/95993357",
+        "addr:city": "Rheine",
+        "addr:country": "DE",
+        "addr:housenumber": "4",
+        "addr:postcode": "48431",
+        "addr:street": "Frankenburgstraße",
+        "alt_name": "Leitstelle Kreis Steinfurt",
+        "building": "office",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Kreis Steinfurt",
+        "short_name": "ILS Kreis Steinfurt"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.4295544,
+              52.2771868
+            ],
+            [
+              7.4295541,
+              52.2771873
+            ],
+            [
+              7.4293938,
+              52.2771852
+            ],
+            [
+              7.4293934,
+              52.2771857
+            ],
+            [
+              7.4293009,
+              52.2771844
+            ],
+            [
+              7.4293016,
+              52.2771465
+            ],
+            [
+              7.4293941,
+              52.2771475
+            ],
+            [
+              7.4293948,
+              52.2770964
+            ],
+            [
+              7.4295555,
+              52.277098
+            ],
+            [
+              7.4295557,
+              52.2770985
+            ],
+            [
+              7.4297285,
+              52.2770992
+            ],
+            [
+              7.4297279,
+              52.2771311
+            ],
+            [
+              7.4297481,
+              52.2771436
+            ],
+            [
+              7.4297276,
+              52.2771556
+            ],
+            [
+              7.4297271,
+              52.2771876
+            ],
+            [
+              7.4295544,
+              52.2771868
+            ]
+          ]
+        ]
+      },
+      "id": "way/95993357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/108755834",
+        "addr:city": "Lemgo",
+        "addr:housenumber": "60",
+        "addr:postcode": "32657",
+        "addr:street": "Blomberger Weg",
+        "alt_name": "Leitstelle Lippe",
+        "building": "yes",
+        "emergency": "control_centre",
+        "height": "6 m",
+        "min_height": "2 m",
+        "name": "Integrierte Leitstelle Lippe",
+        "roof:shape": "hipped",
+        "short_name": "ILS Lippe"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.9213934,
+              52.0232268
+            ],
+            [
+              8.9213384,
+              52.0230974
+            ],
+            [
+              8.9215007,
+              52.023071
+            ],
+            [
+              8.9215558,
+              52.0232006
+            ],
+            [
+              8.9213934,
+              52.0232268
+            ]
+          ]
+        ]
+      },
+      "id": "way/108755834"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/142163963",
+        "addr:city": "Bonn",
+        "addr:housenumber": "112",
+        "addr:postcode": "53119",
+        "addr:street": "Lievelingsweg",
+        "alt_name": "Leitstelle Bonn",
+        "building": "office",
+        "building:levels": "3",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Bonn",
+        "operator": "Feuerwehr Bonn",
+        "phone": "+49 228 7170",
+        "ref": "LST",
+        "short_name": "ILS Bonn"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0734796,
+              50.7433794
+            ],
+            [
+              7.0735961,
+              50.7432176
+            ],
+            [
+              7.0739644,
+              50.7433237
+            ],
+            [
+              7.0740361,
+              50.7433444
+            ],
+            [
+              7.0739196,
+              50.7435062
+            ],
+            [
+              7.0735154,
+              50.7433897
+            ],
+            [
+              7.0734796,
+              50.7433794
+            ]
+          ]
+        ]
+      },
+      "id": "way/142163963"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/145410128",
+        "addr:city": "Erkelenz",
+        "addr:country": "DE",
+        "addr:housenumber": "6",
+        "addr:postcode": "41812",
+        "addr:street": "Zur Feuerwache",
+        "alt_name": "Leitstelle Heinsberg",
+        "building": "yes",
+        "email": "Leitstelle@Kreis-Heinsberg.de",
+        "emergency": "control_centre",
+        "fax": "+49 2431 74708",
+        "name": "Feuerschutzzentrum / Schulungszentrum Kreis Heinsberg",
+        "phone": "+49 2431 96760",
+        "phone:2": "+49 2431 19222",
+        "short_name": "ILS Heinsberg"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.3279475,
+              51.0727245
+            ],
+            [
+              6.3279213,
+              51.0727024
+            ],
+            [
+              6.3278738,
+              51.0727246
+            ],
+            [
+              6.3276841,
+              51.0725627
+            ],
+            [
+              6.3277552,
+              51.0725295
+            ],
+            [
+              6.3280964,
+              51.0723702
+            ],
+            [
+              6.3281943,
+              51.0723245
+            ],
+            [
+              6.3284111,
+              51.0725089
+            ],
+            [
+              6.3279475,
+              51.0727245
+            ]
+          ]
+        ]
+      },
+      "id": "way/145410128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/272373709",
+        "addr:city": "Neuss",
+        "addr:country": "DE",
+        "addr:housenumber": "1-5",
+        "addr:postcode": "41460",
+        "addr:street": "Hammfelddamm",
+        "alt_name": "Leitstelle Neuss",
+        "area": "yes",
+        "contact:fax": "+49 2131 135-145",
+        "contact:phone": "+49 2131 135-100",
+        "contact:website": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/ordnungsamt/themen/kreisleitstelle.html",
+        "emergency": "control_centre",
+        "government": "emergency",
+        "name": "Integrierte Leitstelle Neuss",
+        "office": "government",
+        "operator": "Rhein-Kreis Neuss",
+        "short_name": "ILS Neuss"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.708584,
+              51.192942
+            ],
+            [
+              6.7084789,
+              51.1929801
+            ],
+            [
+              6.7082643,
+              51.1927472
+            ],
+            [
+              6.7083694,
+              51.1927091
+            ],
+            [
+              6.708584,
+              51.192942
+            ]
+          ]
+        ]
+      },
+      "id": "way/272373709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/282979198",
+        "addr:city": "Brakel",
+        "addr:country": "DE",
+        "addr:housenumber": "7",
+        "addr:postcode": "33034",
+        "addr:street": "Am Galgenberg",
+        "alt_name": "Leitstelle Kreis Höxter",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Kreis Höxter",
+        "short_name": "ILS Kreis Höxter"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.1968799,
+              51.7184294
+            ],
+            [
+              9.1969517,
+              51.7183046
+            ],
+            [
+              9.1963953,
+              51.7181814
+            ],
+            [
+              9.1964483,
+              51.7180879
+            ],
+            [
+              9.1971629,
+              51.7182457
+            ],
+            [
+              9.1971097,
+              51.7183387
+            ],
+            [
+              9.1970695,
+              51.7183298
+            ],
+            [
+              9.1969973,
+              51.7184546
+            ],
+            [
+              9.1968813,
+              51.7184298
+            ],
+            [
+              9.1968799,
+              51.7184294
+            ]
+          ]
+        ]
+      },
+      "id": "way/282979198"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/290187819",
+        "alt_name": "Leitstelle Rhein-Erft",
+        "building:part": "office",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle des Rhein-Erft-Kreises",
+        "ref": "LST",
+        "short_name": "ILS Rhein-Erft"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.6950124,
+              50.8803832
+            ],
+            [
+              6.6949846,
+              50.880373
+            ],
+            [
+              6.6949594,
+              50.8803048
+            ],
+            [
+              6.6949768,
+              50.8802864
+            ],
+            [
+              6.695104,
+              50.8802676
+            ],
+            [
+              6.6951347,
+              50.8803489
+            ],
+            [
+              6.6951672,
+              50.880362
+            ],
+            [
+              6.6950124,
+              50.8803832
+            ]
+          ]
+        ]
+      },
+      "id": "way/290187819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/319290278",
+        "alt_name": "Leitstelle Köln",
+        "building": "fire_station",
+        "building:levels": "2",
+        "emergency": "control_centre",
+        "layer": "1",
+        "name": "Leitstelle Feuerwehr Köln",
+        "operator": "Stadt Köln",
+        "short_name": "ILS Köln",
+        "smoking": "isolated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.9493334,
+              50.986334
+            ],
+            [
+              6.9494353,
+              50.9863624
+            ],
+            [
+              6.9494448,
+              50.9863888
+            ],
+            [
+              6.9493873,
+              50.9864095
+            ],
+            [
+              6.9493256,
+              50.9864223
+            ],
+            [
+              6.9492614,
+              50.9864273
+            ],
+            [
+              6.9491962,
+              50.9864239
+            ],
+            [
+              6.9491339,
+              50.986413
+            ],
+            [
+              6.9490759,
+              50.9863945
+            ],
+            [
+              6.9490248,
+              50.9863691
+            ],
+            [
+              6.9489971,
+              50.9863503
+            ],
+            [
+              6.9489827,
+              50.9863381
+            ],
+            [
+              6.9489508,
+              50.9863024
+            ],
+            [
+              6.9489305,
+              50.9862635
+            ],
+            [
+              6.9489228,
+              50.986223
+            ],
+            [
+              6.9489272,
+              50.9861823
+            ],
+            [
+              6.9489447,
+              50.986143
+            ],
+            [
+              6.9489744,
+              50.9861062
+            ],
+            [
+              6.9489128,
+              50.9860886
+            ],
+            [
+              6.9489509,
+              50.9860353
+            ],
+            [
+              6.9490159,
+              50.986073
+            ],
+            [
+              6.9490633,
+              50.9860475
+            ],
+            [
+              6.9490909,
+              50.9860365
+            ],
+            [
+              6.9490358,
+              50.9859167
+            ],
+            [
+              6.9490444,
+              50.9859047
+            ],
+            [
+              6.9490536,
+              50.9858918
+            ],
+            [
+              6.9491179,
+              50.9860279
+            ],
+            [
+              6.9491814,
+              50.9860146
+            ],
+            [
+              6.9492457,
+              50.9860096
+            ],
+            [
+              6.9493105,
+              50.9860126
+            ],
+            [
+              6.9493729,
+              50.9860236
+            ],
+            [
+              6.9494309,
+              50.986042
+            ],
+            [
+              6.9494825,
+              50.9860671
+            ],
+            [
+              6.949499,
+              50.9860784
+            ],
+            [
+              6.9495244,
+              50.9860984
+            ],
+            [
+              6.9495561,
+              50.986134
+            ],
+            [
+              6.9495764,
+              50.9861728
+            ],
+            [
+              6.9495848,
+              50.9862134
+            ],
+            [
+              6.9495798,
+              50.9862543
+            ],
+            [
+              6.949579,
+              50.9862571
+            ],
+            [
+              6.9495624,
+              50.9862937
+            ],
+            [
+              6.9495336,
+              50.9863303
+            ],
+            [
+              6.9494923,
+              50.9863628
+            ],
+            [
+              6.9494528,
+              50.9863532
+            ],
+            [
+              6.9494232,
+              50.9862853
+            ],
+            [
+              6.9493607,
+              50.9862966
+            ],
+            [
+              6.9493334,
+              50.986334
+            ]
+          ]
+        ]
+      },
+      "id": "way/319290278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/349845515",
+        "addr:city": "Wesel",
+        "addr:housenumber": "8",
+        "addr:postcode": "46483",
+        "addr:street": "Jülicher Straße",
+        "alt_name": "Leitstelle Wesel",
+        "building": "yes",
+        "building:levels": "2",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Wesel",
+        "opening_hours": "24/7",
+        "short_name": "ILS Wesel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.6106638,
+              51.6659288
+            ],
+            [
+              6.6106927,
+              51.6657029
+            ],
+            [
+              6.6112357,
+              51.6657318
+            ],
+            [
+              6.6111946,
+              51.6659577
+            ],
+            [
+              6.6106638,
+              51.6659288
+            ]
+          ]
+        ]
+      },
+      "id": "way/349845515"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/377610416",
+        "addr:city": "Hiddenhausen",
+        "addr:housenumber": "12",
+        "addr:postcode": "32120",
+        "addr:street": "Königsberger Straße",
+        "building": "yes",
+        "contact:website": "http://www.kfv-herford.de/index.php/leitstelle",
+        "emergency": "control_centre",
+        "name": "Leitstelle Kreis Herford",
+        "short_name": "LtS Kreis Herford"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.6342807,
+              52.1704823
+            ],
+            [
+              8.634337,
+              52.1703697
+            ],
+            [
+              8.6343366,
+              52.1703693
+            ],
+            [
+              8.6343555,
+              52.1703316
+            ],
+            [
+              8.6345898,
+              52.1703756
+            ],
+            [
+              8.6345475,
+              52.1704581
+            ],
+            [
+              8.6345621,
+              52.1704756
+            ],
+            [
+              8.6345345,
+              52.1704845
+            ],
+            [
+              8.6345139,
+              52.1705261
+            ],
+            [
+              8.6342807,
+              52.1704823
+            ]
+          ]
+        ]
+      },
+      "id": "way/377610416"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/685876326",
+        "addr:city": "Unna",
+        "addr:country": "DE",
+        "addr:housenumber": "5",
+        "addr:postcode": "59423",
+        "addr:street": "Florianstraße",
+        "alt_name": "Kreisleitstelle Unna",
+        "building": "office",
+        "email": "bevoelkerungsschutz@kreis-unna.de",
+        "emergency": "control_centre",
+        "government": "emergency",
+        "name": "Rettungsleitstelle Kreis Unna",
+        "office": "government",
+        "operator": "Landkreis Unna",
+        "phone": "+49 2303 16001",
+        "short_name": "ILS Unna",
+        "website": "https://www.kreis-unna.de/hauptnavigation/kreis-region/politik-verwaltung/kreisverwaltung/oeffentliche-sicherheit-und-ordnung/bevoelkerungsschutz/leitstelle/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.6617662,
+              51.5253563
+            ],
+            [
+              7.6617731,
+              51.5253562
+            ],
+            [
+              7.6617756,
+              51.525506
+            ],
+            [
+              7.6615063,
+              51.5255076
+            ],
+            [
+              7.6615065,
+              51.5255214
+            ],
+            [
+              7.6611614,
+              51.5255235
+            ],
+            [
+              7.6611612,
+              51.5255105
+            ],
+            [
+              7.6610562,
+              51.5255111
+            ],
+            [
+              7.6610564,
+              51.5255232
+            ],
+            [
+              7.661058,
+              51.5256205
+            ],
+            [
+              7.6608521,
+              51.5256218
+            ],
+            [
+              7.6608479,
+              51.525362
+            ],
+            [
+              7.660854,
+              51.525362
+            ],
+            [
+              7.6611588,
+              51.5253601
+            ],
+            [
+              7.6615039,
+              51.5253579
+            ],
+            [
+              7.6617662,
+              51.5253563
+            ]
+          ]
+        ]
+      },
+      "id": "way/685876326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1526675087",
+        "alt_name": "Leitstelle Ennepe-Ruhr",
+        "description": "Rettungs- und Feuerwehrleitstelle",
+        "emergency": "control_centre",
+        "name": "Kreisleitstelle Ennepe-Ruhr",
+        "short_name": "KRLST Ennepe-Ruhr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2982912,
+          51.2848411
+        ]
+      },
+      "id": "node/1526675087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4005623741",
+        "description": "Untergebracht in der FuR der Stadt Recklinghausen. Die Führungsstelle für die Gefahrenabwehr im Kreis Recklinghausen.",
+        "emergency": "control_centre",
+        "name": "Kreisleitstelle Recklinghausen",
+        "operator": "Kreis Recklinghausen",
+        "phone": "+49 2361 93940",
+        "short_name": "ILS Recklinghausen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2032991,
+          51.608843
+        ]
+      },
+      "id": "node/4005623741"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4079987492",
+        "addr:city": "Euskirchen",
+        "addr:country": "DE",
+        "addr:housenumber": "32",
+        "addr:postcode": "53879",
+        "addr:street": "Jülicher Ring",
+        "alt_name": "Leitstelle Euskirchen",
+        "contact:website": "https://www.kfv-eu.de/leitstelle.html",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Kreis Euskirchen",
+        "short_name": "ILS Euskirchen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7832893,
+          50.6701121
+        ]
+      },
+      "id": "node/4079987492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763055446",
+        "alt_name": "Leitstelle Hamm",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Hamm",
+        "short_name": "ILS Hamm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7921596,
+          51.6779584
+        ]
+      },
+      "id": "node/5763055446"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763055447",
+        "alt_name": "Leitstelle Hagen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Hagen",
+        "short_name": "ILS Hagen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5462145,
+          51.3743734
+        ]
+      },
+      "id": "node/5763055447"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763055448",
+        "alt_name": "Leitstelle Dortmund",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Dortmund",
+        "short_name": "ILS Dortmund"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4615459,
+          51.5206316
+        ]
+      },
+      "id": "node/5763055448"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763113912",
+        "alt_name": "Leitstelle Lüdenscheid",
+        "emergency": "control_centre",
+        "name": "Kreisleitstelle Lüdenscheid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6257914,
+          51.2230301
+        ]
+      },
+      "id": "node/5763113912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763113913",
+        "alt_name": "Leitstelle Herne",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Herne",
+        "short_name": "ILS Herne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2306802,
+          51.5369562
+        ]
+      },
+      "id": "node/5763113913"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763139695",
+        "alt_name": "Leitstelle Hochsauerlandkreis",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Hochsauerlandkreis",
+        "short_name": "ILS Hochsauerlandkreis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2834194,
+          51.3425803
+        ]
+      },
+      "id": "node/5763139695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763155201",
+        "alt_name": "Leitstelle Olpe",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Olpe",
+        "short_name": "ILS Olpe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8494464,
+          51.0331963
+        ]
+      },
+      "id": "node/5763155201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763163067",
+        "alt_name": "Leitstelle Soest",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Soest",
+        "short_name": "ILS Soest"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0840943,
+          51.56198
+        ]
+      },
+      "id": "node/5763163067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763184023",
+        "alt_name": "Leitstelle Bielefeld",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Bielefeld",
+        "short_name": "ILS Bielefeld"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5544219,
+          52.0254808
+        ]
+      },
+      "id": "node/5763184023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763203800",
+        "alt_name": "Leitstelle Kreis Paderborn",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Kreis Paderborn",
+        "short_name": "ILS Kreis Paderborn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6156714,
+          51.6081272
+        ]
+      },
+      "id": "node/5763203800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763264316",
+        "alt_name": "Leitstelle Essen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Essen",
+        "short_name": "ILS Essen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.027532,
+          51.461255
+        ]
+      },
+      "id": "node/5763264316"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763264317",
+        "alt_name": "Leitstelle Duisburg",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Duisburg",
+        "short_name": "ILS Duisburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.79371,
+          51.4433941
+        ]
+      },
+      "id": "node/5763264317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763264319",
+        "alt_name": "Leitstelle Minden-Lübbecke",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Minden-Lübbecke",
+        "short_name": "ILS Münden-Lübbecke"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.9146079,
+          52.3009919
+        ]
+      },
+      "id": "node/5763264319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763285733",
+        "alt_name": "Leitstelle Krefeld",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Krefeld",
+        "short_name": "ILS Krefeld"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5831293,
+          51.3284963
+        ]
+      },
+      "id": "node/5763285733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763285734",
+        "alt_name": "Leitstelle Kleve",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Kleve",
+        "short_name": "ILS Kleve"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1384954,
+          51.782073
+        ]
+      },
+      "id": "node/5763285734"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763314917",
+        "alt_name": "Leitstelle Mülheim an der Ruhr",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Mülheim an der Ruhr",
+        "short_name": "ILS Mülheim an der Ruhr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8614855,
+          51.4283676
+        ]
+      },
+      "id": "node/5763314917"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763314918",
+        "alt_name": "Leitstelle Mönchengladbach",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Mönchengladbach",
+        "short_name": "ILS Mönchengladbach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4592692,
+          51.1621613
+        ]
+      },
+      "id": "node/5763314918"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763342700",
+        "alt_name": "Leitstelle Viersen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Viersen",
+        "short_name": "ILS Viersen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3969194,
+          51.2615088
+        ]
+      },
+      "id": "node/5763342700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763342701",
+        "alt_name": "Leitstelle Remscheid",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Remscheid",
+        "short_name": "ILS Remscheid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2303555,
+          51.1837498
+        ]
+      },
+      "id": "node/5763342701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763342702",
+        "alt_name": "Leitstelle Oberhausen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Oberhausen",
+        "short_name": "ILS Oberhausen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8666313,
+          51.4811275
+        ]
+      },
+      "id": "node/5763342702"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763376279",
+        "alt_name": "Leitstelle Wuppertal/Solingen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Wuppertal/Solingen",
+        "short_name": "ILS Wuppertal/Solingen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1378431,
+          51.2678382
+        ]
+      },
+      "id": "node/5763376279"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763420885",
+        "alt_name": "Leitstelle Rheinisch-Bergischer Kreis",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Rheinisch-Bergischer Kreis",
+        "short_name": "ILS Rheinisch-Bergischer Kreis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1136771,
+          50.994106
+        ]
+      },
+      "id": "node/5763420885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763514865",
+        "addr:city": "Marienheide",
+        "addr:country": "DE",
+        "addr:housenumber": "12",
+        "addr:postcode": "51709",
+        "addr:street": "Lockenfeld",
+        "alt_name": "Leitstelle Oberberg",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Oberberg",
+        "short_name": "ILS Oberberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5446603,
+          51.0535042
+        ]
+      },
+      "id": "node/5763514865"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763514866",
+        "alt_name": "Leitstelle Leverkusen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Leverkusen",
+        "short_name": "ILS Leverkusen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9967273,
+          51.0178064
+        ]
+      },
+      "id": "node/5763514866"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763514867",
+        "alt_name": "Leitstelle Kreis Düren",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Kreis Düren",
+        "short_name": "ILS Kreis Düren"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5194934,
+          50.7570614
+        ]
+      },
+      "id": "node/5763514867"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763522208",
+        "alt_name": "Leitstelle Borken",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Borken",
+        "short_name": "ILS Borken"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.841981,
+          51.8515634
+        ]
+      },
+      "id": "node/5763522208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5763522209",
+        "alt_name": "Leitstelle Rhein-Sieg",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Rhein-Sieg",
+        "short_name": "ILS Rhein-Sieg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2072358,
+          50.793238
+        ]
+      },
+      "id": "node/5763522209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765211419",
+        "alt_name": "Leitstelle Coesfeld",
+        "emergency": "control_centre",
+        "name": "Kreisleitstelle Coesfeld",
+        "short_name": "ILS Coesfeld"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1726023,
+          51.9425494
+        ]
+      },
+      "id": "node/5765211419"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765220814",
+        "alt_name": "Leitstelle Münster",
+        "check_date": "2018-08-12",
+        "contact:email": "feuerwehr@stadt-muenster.de",
+        "contact:fax": "+49 251 2025-8010",
+        "contact:phone": "+49 251 2025-0",
+        "contact:website": "https://www.stadt-muenster.de/feuerwehr/berufsfeuerwehr/einsatzvorbereitung/leitstelle.html",
+        "description:de": "Integrierte Leitstelle für Brandschutz, Rettungsdienst und Katastrophenschutz der Feuerwehr Münster.",
+        "emergency": "control_centre",
+        "level": "3",
+        "name": "Integrierte Leitstelle Münster",
+        "short_name": "ILS Münster",
+        "start_date": "2015-10-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6103005,
+          51.9744824
+        ]
+      },
+      "id": "node/5765220814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765223515",
+        "alt_name": "Leitstelle Warendorf",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Warendorf",
+        "short_name": "ILS Warendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9849774,
+          51.9417785
+        ]
+      },
+      "id": "node/5765223515"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7227260563",
+        "alt_name": "Leitstelle Gütersloh",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Kreis Gütersloh",
+        "short_name": "ILS Gütersloh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3787984,
+          51.9128925
+        ]
+      },
+      "id": "node/7227260563"
+    }
+  ]
+}

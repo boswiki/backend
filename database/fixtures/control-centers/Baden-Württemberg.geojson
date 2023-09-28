@@ -1,0 +1,1124 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:29:35Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/88114105",
+        "addr:city": "Radolfzell am Bodensee",
+        "addr:country": "DE",
+        "addr:housenumber": "74",
+        "addr:postcode": "78315",
+        "addr:street": "Konstanzer Straße",
+        "alt_name": "Leitstelle Konstanz",
+        "building": "civic",
+        "covering": "Landkreis Konstanz, ohne Stadt Konstanz",
+        "emergency": "control_centre",
+        "emergency:phone": "112",
+        "emergency_control_centre:fire": "yes",
+        "emergency_control_centre:medical": "yes",
+        "emergency_control_centre:police": "no",
+        "name": "Integrierte Leitstelle Konstanz",
+        "operator": "Deutsches Rotes Kreuz Kreisverband Konstanz",
+        "short_name": "ILS Konstanz",
+        "website": "http://drklkkn3.drkcms.de/rettungsdienst/integrierte-leitstelle-konstanz.html"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.9835124,
+              47.7469935
+            ],
+            [
+              8.9836232,
+              47.7466348
+            ],
+            [
+              8.984508,
+              47.7467584
+            ],
+            [
+              8.9844668,
+              47.7468918
+            ],
+            [
+              8.983745,
+              47.7467909
+            ],
+            [
+              8.9837111,
+              47.7469006
+            ],
+            [
+              8.9844437,
+              47.7470029
+            ],
+            [
+              8.9844079,
+              47.7471186
+            ],
+            [
+              8.9835124,
+              47.7469935
+            ]
+          ]
+        ]
+      },
+      "id": "way/88114105"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/111184126",
+        "alt_name": "Leitstelle Heilbronn",
+        "building": "fire_station",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Heilbronn",
+        "short_name": "ILS Heilbronn"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.2172343,
+              49.1275185
+            ],
+            [
+              9.2171562,
+              49.1272272
+            ],
+            [
+              9.2173939,
+              49.1272
+            ],
+            [
+              9.2174719,
+              49.1274912
+            ],
+            [
+              9.2172915,
+              49.1275119
+            ],
+            [
+              9.2172343,
+              49.1275185
+            ]
+          ]
+        ]
+      },
+      "id": "way/111184126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/119966028",
+        "addr:city": "Freudenstadt",
+        "addr:country": "DE",
+        "addr:housenumber": "122",
+        "addr:postcode": "72250",
+        "addr:street": "Karl-von-Hahn-Straße",
+        "alt_name": "Leitstelle Freudenstadt",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Freudenstadt",
+        "short_name": "ILS Freudenstadt"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.4037115,
+              48.4777164
+            ],
+            [
+              8.403617,
+              48.4779245
+            ],
+            [
+              8.4032714,
+              48.4778556
+            ],
+            [
+              8.4033658,
+              48.4776475
+            ],
+            [
+              8.4037115,
+              48.4777164
+            ]
+          ]
+        ]
+      },
+      "id": "way/119966028"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/216615887",
+        "addr:city": "Ladenburg",
+        "addr:country": "DE",
+        "addr:housenumber": "66",
+        "addr:postcode": "68526",
+        "addr:street": "Trajanstraße",
+        "alt_name": "Leitstelle Rhein-Neckar",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Rhein-Neckar",
+        "short_name": "ILS Rhein-Neckar"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.6147971,
+              49.4707299
+            ],
+            [
+              8.6143931,
+              49.4707337
+            ],
+            [
+              8.6143906,
+              49.4706241
+            ],
+            [
+              8.6146966,
+              49.4706212
+            ],
+            [
+              8.6146973,
+              49.4706553
+            ],
+            [
+              8.6147954,
+              49.4706543
+            ],
+            [
+              8.6147946,
+              49.4706202
+            ],
+            [
+              8.6150005,
+              49.4706182
+            ],
+            [
+              8.6150155,
+              49.4712783
+            ],
+            [
+              8.6147546,
+              49.4712808
+            ],
+            [
+              8.614746,
+              49.470901
+            ],
+            [
+              8.614801,
+              49.4709005
+            ],
+            [
+              8.6147971,
+              49.4707299
+            ]
+          ]
+        ]
+      },
+      "id": "way/216615887"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/223903050",
+        "alt_name": "Leitstelle Freiburg",
+        "building": "fire_station",
+        "description": "Notrufzentrale für die Stadt Freiburg und den Landkreis Breisgau-Hochschwarzwald",
+        "emergency": "control_centre",
+        "layer": "1",
+        "name": "Integrierte Leitstelle Freiburg∙Breisgau-Hochschwarzwald",
+        "phone": "+49 761 2013315",
+        "ref": "C",
+        "short_name": "ILS Freiburg",
+        "start_date": "2011-07-01",
+        "website": "http://www.112-freiburg.de",
+        "wikimedia_commons": "File:Feuerwache (Freiburg) jm31992.jpg"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.8293082,
+              47.9911523
+            ],
+            [
+              7.8293396,
+              47.9911415
+            ],
+            [
+              7.8293362,
+              47.9911372
+            ],
+            [
+              7.8294373,
+              47.9911025
+            ],
+            [
+              7.8295023,
+              47.9910802
+            ],
+            [
+              7.8295607,
+              47.9910602
+            ],
+            [
+              7.829615,
+              47.9910415
+            ],
+            [
+              7.8296904,
+              47.9910157
+            ],
+            [
+              7.829749,
+              47.9909956
+            ],
+            [
+              7.8300076,
+              47.9909069
+            ],
+            [
+              7.8300358,
+              47.9909437
+            ],
+            [
+              7.8300592,
+              47.9909742
+            ],
+            [
+              7.8300826,
+              47.9910048
+            ],
+            [
+              7.8301096,
+              47.99104
+            ],
+            [
+              7.8300607,
+              47.9910568
+            ],
+            [
+              7.8300745,
+              47.9910737
+            ],
+            [
+              7.8300887,
+              47.9910934
+            ],
+            [
+              7.8301426,
+              47.9910749
+            ],
+            [
+              7.8302194,
+              47.9911751
+            ],
+            [
+              7.8301891,
+              47.9911856
+            ],
+            [
+              7.8301446,
+              47.9912011
+            ],
+            [
+              7.8300293,
+              47.9912404
+            ],
+            [
+              7.8299623,
+              47.9912633
+            ],
+            [
+              7.8299517,
+              47.991267
+            ],
+            [
+              7.8298767,
+              47.9911691
+            ],
+            [
+              7.8299048,
+              47.9911594
+            ],
+            [
+              7.829875,
+              47.9911205
+            ],
+            [
+              7.829851,
+              47.9911287
+            ],
+            [
+              7.8297963,
+              47.9911475
+            ],
+            [
+              7.8297143,
+              47.9911756
+            ],
+            [
+              7.8296503,
+              47.9911975
+            ],
+            [
+              7.8295887,
+              47.9912187
+            ],
+            [
+              7.8295367,
+              47.9912365
+            ],
+            [
+              7.8294069,
+              47.9912811
+            ],
+            [
+              7.8293082,
+              47.9911523
+            ]
+          ]
+        ]
+      },
+      "id": "way/223903050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/313853070",
+        "addr:city": "Karlsruhe",
+        "addr:country": "DE",
+        "addr:housenumber": "1",
+        "addr:street": "Zimmerstraße",
+        "architect": "harder stumpfl schramm GbR",
+        "building": "office",
+        "building:levels": "5",
+        "construction:start_date": "2013-11-20",
+        "emergency": "control_centre",
+        "emergency_control_centre:fire": "yes",
+        "emergency_control_centre:medical": "yes",
+        "emergency_control_centre:police": "no",
+        "emergency_telephone_code": "112",
+        "name": "Integrierte Leitstelle des Stadt- und Landkreises Karlsruhe",
+        "roof:levels": "0",
+        "roof:shape": "flat",
+        "short_name": "ILS Karlsruhe",
+        "source:geometry": "Maps4BW, LGL, www.lgl-bw.de",
+        "start_date": "2016-08"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.4249693,
+              49.0021588
+            ],
+            [
+              8.4247556,
+              49.0020796
+            ],
+            [
+              8.4248626,
+              49.0019553
+            ],
+            [
+              8.4248759,
+              49.0019399
+            ],
+            [
+              8.4250155,
+              49.0017778
+            ],
+            [
+              8.4252292,
+              49.001857
+            ],
+            [
+              8.4250763,
+              49.0020345
+            ],
+            [
+              8.4249693,
+              49.0021588
+            ]
+          ]
+        ]
+      },
+      "id": "way/313853070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/316491344",
+        "addr:city": "Villingen-Schwenningen",
+        "addr:housenumber": "22",
+        "addr:postcode": "78052",
+        "addr:street": "Klinikstraße",
+        "alt_name": "Leitstelle Villingen-Schwenningen",
+        "building": "yes",
+        "building:levels": "2",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Schwarzwald-Baar",
+        "official_name": "Integrierte Leitstelle Schwarzwald-Baar",
+        "short_name": "ILS Schwarzwald-Baar"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5000395,
+              48.0662908
+            ],
+            [
+              8.5002659,
+              48.0663109
+            ],
+            [
+              8.5002356,
+              48.0664643
+            ],
+            [
+              8.5000852,
+              48.066451
+            ],
+            [
+              8.5000735,
+              48.0665103
+            ],
+            [
+              8.4999975,
+              48.0665036
+            ],
+            [
+              8.5000395,
+              48.0662908
+            ]
+          ]
+        ]
+      },
+      "id": "way/316491344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/562576391",
+        "addr:city": "Schwäbisch Hall",
+        "addr:country": "DE",
+        "addr:housenumber": "27",
+        "addr:postcode": "74523",
+        "addr:street": "Steinbacher Straße",
+        "alt_name": "Leitstelle Schwäbisch Hall",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Schwäbisch Hall",
+        "short_name": "ILS Schwäbisch Hall"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.7368613,
+              49.1073682
+            ],
+            [
+              9.7365307,
+              49.1075543
+            ],
+            [
+              9.736433,
+              49.1074799
+            ],
+            [
+              9.7364517,
+              49.1074694
+            ],
+            [
+              9.736435,
+              49.1074567
+            ],
+            [
+              9.7365676,
+              49.107382
+            ],
+            [
+              9.7365608,
+              49.1073768
+            ],
+            [
+              9.7366161,
+              49.1073457
+            ],
+            [
+              9.7365992,
+              49.1073328
+            ],
+            [
+              9.7366281,
+              49.1073166
+            ],
+            [
+              9.736645,
+              49.1073294
+            ],
+            [
+              9.73674,
+              49.1072759
+            ],
+            [
+              9.7368089,
+              49.1073283
+            ],
+            [
+              9.7368613,
+              49.1073682
+            ]
+          ]
+        ]
+      },
+      "id": "way/562576391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/676056224",
+        "addr:city": "Bad Mergentheim",
+        "addr:housenumber": "30",
+        "addr:postcode": "97980",
+        "addr:street": "Rotkreuzstraße",
+        "alt_name": "Integrierte Leitstelle Main-Tauber-Kreis für Rettungsdienst und Feuerwehr",
+        "building": "commercial",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Main-Tauber-Kreis",
+        "short_name": "ILS Main-Tauber"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.7669744,
+              49.4872229
+            ],
+            [
+              9.7667268,
+              49.4872393
+            ],
+            [
+              9.7667075,
+              49.4871165
+            ],
+            [
+              9.7667561,
+              49.4871133
+            ],
+            [
+              9.766719,
+              49.4868771
+            ],
+            [
+              9.7668271,
+              49.48687
+            ],
+            [
+              9.7668322,
+              49.486903
+            ],
+            [
+              9.7669233,
+              49.486897
+            ],
+            [
+              9.7669744,
+              49.4872229
+            ]
+          ]
+        ]
+      },
+      "id": "way/676056224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4737744991",
+        "alt_name": "Leitstelle Tübingen",
+        "emergency": "control_centre",
+        "name": "Integrierte Rettungsleitstelle Tübingen",
+        "short_name": "ILS Tübingen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0630371,
+          48.4915366
+        ]
+      },
+      "id": "node/4737744991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5131271960",
+        "alt_name": "Leitstelle Rottweil",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Rottweil",
+        "short_name": "ILS Rottweil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6142975,
+          48.1646183
+        ]
+      },
+      "id": "node/5131271960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5131289685",
+        "alt_name": "Leitstelle Bodensee-Oberschwaben",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Bodensee-Oberschwaben",
+        "operator": "Deutsches Rotes Kreuz Rettungsdienst Bodensee-Oberschwaben gGmbH",
+        "short_name": "ILS Bodensee-Oberschwaben"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6221005,
+          47.801777
+        ]
+      },
+      "id": "node/5131289685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5572949319",
+        "alt_name": "Leitstelle Mittelbaden",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Mittelbaden",
+        "short_name": "ILS Mittelbaden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2118635,
+          48.8607938
+        ]
+      },
+      "id": "node/5572949319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5572995663",
+        "alt_name": "Leitstelle Pforzheim",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Pforzheim",
+        "official_name": "Integrierte Leitstelle Pforzheim-Enzkreis",
+        "short_name": "ILS Pforzheim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6655459,
+          48.8834779
+        ]
+      },
+      "id": "node/5572995663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573020287",
+        "alt_name": "Leitstelle Ludwigsburg",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Ludwigsburg",
+        "short_name": "ILS Ludwigsburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1873161,
+          48.9020884
+        ]
+      },
+      "id": "node/5573020287"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573048038",
+        "alt_name": "Leitstelle Waiblingen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Waiblingen",
+        "official_name": "Integrierte Leitstelle Rems-Murr",
+        "short_name": "ILS Waiblingen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3255288,
+          48.8308789
+        ]
+      },
+      "id": "node/5573048038"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573059241",
+        "alt_name": "Leitstelle Aalen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Aalen",
+        "official_name": "Integrierte Regionalleitstelle Ostwürttemberg",
+        "short_name": "ILS Aalen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0846314,
+          48.8407515
+        ]
+      },
+      "id": "node/5573059241"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573062987",
+        "alt_name": "Leitstelle Calw",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Calw",
+        "short_name": "ILS Calw"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.755608,
+          48.7040088
+        ]
+      },
+      "id": "node/5573062987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573075044",
+        "alt_name": "Leitstelle Böblingen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Böblingen",
+        "short_name": "ILS Böblingen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0132608,
+          48.6724254
+        ]
+      },
+      "id": "node/5573075044"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573118567",
+        "alt_name": "Leitstelle Ortenau",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Ortenau",
+        "short_name": "ILS Ortenau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.93877,
+          48.4649353
+        ]
+      },
+      "id": "node/5573118567"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573141721",
+        "alt_name": "Leitstelle Balingen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Zollernalb",
+        "official_name": "Integrierte Leitstelle Zollernalb",
+        "short_name": "ILS Balingen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8592154,
+          48.2795941
+        ]
+      },
+      "id": "node/5573141721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573147713",
+        "alt_name": "Leitstelle Ulm",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Ulm",
+        "short_name": "ILS Ulm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9922967,
+          48.4060918
+        ]
+      },
+      "id": "node/5573147713"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573152209",
+        "alt_name": "Leitstelle Biberach",
+        "description": "Untergrebacht sind hier der Ortsverein Biberach/Riß, Kreisverband Biberach/Riß sowie die Integreierte Leitstelle Region Biberach",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Biberach",
+        "short_name": "ILS Biberach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.768606,
+          48.0950801
+        ]
+      },
+      "id": "node/5573152209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573187217",
+        "alt_name": "Leitstelle Emmendingen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Emmendingen",
+        "short_name": "ILS Emmendingen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8515388,
+          48.1146322
+        ]
+      },
+      "id": "node/5573187217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573337878",
+        "alt_name": "Leitstelle Lörrach",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Lörrach",
+        "short_name": "ILS Lörrach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6574264,
+          47.6029952
+        ]
+      },
+      "id": "node/5573337878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573415458",
+        "alt_name": "Leitstelle Bodenseekreis",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Bodensee-Oberschwaben (Standort Friedrichshafen)",
+        "operator": "Deutsches Rotes Kreuz Rettungsdienst Bodensee-Oberschwaben",
+        "short_name": "ILS Bodenseekreis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.4514594,
+          47.6581256
+        ]
+      },
+      "id": "node/5573415458"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573429768",
+        "alt_name": "Leitstelle Mosbach",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Mosbach",
+        "short_name": "ILS Mosbach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1508634,
+          49.3576769
+        ]
+      },
+      "id": "node/5573429768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573466275",
+        "alt_name": "Leitstelle Hohenlohe",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Hohenlohe",
+        "short_name": "ILS Hohenlohe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6791181,
+          49.2554886
+        ]
+      },
+      "id": "node/5573466275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5573623721",
+        "alt_name": "Leitstelle Waldshut",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Waldshut-Tiengen",
+        "short_name": "ILS Waldshut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2279467,
+          47.6073101
+        ]
+      },
+      "id": "node/5573623721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5577793856",
+        "alt_name": "Leitstelle Esslingen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Esslingen",
+        "short_name": "ILS Esslingen",
+        "wikimedia_commons": "File:Rettungsleitstelle Esslingen.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3129577,
+          48.7342796
+        ]
+      },
+      "id": "node/5577793856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5577936414",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Tuttlingen",
+        "short_name": "ILS Tuttlingen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7875578,
+          47.9688232
+        ]
+      },
+      "id": "node/5577936414"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5601613581",
+        "alt_name": "Leitstelle Stuttgart",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Stuttgart",
+        "short_name": "ILS Stuttgart",
+        "wikimedia_commons": "File:SIMOS Stuttgart-pjt.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2197552,
+          48.7978283
+        ]
+      },
+      "id": "node/5601613581"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8254354188",
+        "alt_name": "Leitstelle Reutlingen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Reutlingen",
+        "short_name": "ILS Reutlingen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1897956,
+          48.4923921
+        ]
+      },
+      "id": "node/8254354188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10942113605",
+        "addr:city": "Pfalzgrafenweiler",
+        "addr:housenumber": "6",
+        "addr:postcode": "72285",
+        "addr:street": "Karl-Berner-Straße",
+        "brand": "Deutsches Rotes Kreuz",
+        "brand:wikidata": "Q694104",
+        "emergency": "control_centre",
+        "name": "Deutsches Rotes Kreuz Lehrleistelle Baden-Württemberg",
+        "operator": "DRK Landesschule Baden-Württemberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5766176,
+          48.5176242
+        ]
+      },
+      "id": "node/10942113605"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:33:36Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740477016",
+        "alt_name": "Leitstelle Hamburg",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Hamburg",
+        "short_name": "ILS Hamburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0255971,
+          53.5473969
+        ]
+      },
+      "id": "node/5740477016"
+    }
+  ]
+}

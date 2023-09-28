@@ -1,0 +1,916 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:22:34Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/89033859",
+        "addr:city": "Kempten (Allgäu)",
+        "addr:housenumber": "2",
+        "addr:postcode": "87439",
+        "addr:street": "Rottachstraße",
+        "alt_name": "Leitstelle Allgäu",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Allgäu",
+        "short_name": "ILS Allgäu"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.3157874,
+              47.7299276
+            ],
+            [
+              10.3163679,
+              47.7299311
+            ],
+            [
+              10.3164443,
+              47.7299316
+            ],
+            [
+              10.3164412,
+              47.7301654
+            ],
+            [
+              10.3157842,
+              47.7301615
+            ],
+            [
+              10.3157874,
+              47.7299276
+            ]
+          ]
+        ]
+      },
+      "id": "way/89033859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92106335",
+        "addr:city": "Schwabach",
+        "addr:housenumber": "10",
+        "addr:postcode": "91126",
+        "addr:street": "Weißenburger Straße",
+        "alt_name": "Leitstelle Mittelfranken Süd",
+        "building": "office",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Mittelfranken Süd",
+        "operator": "BRK",
+        "short_name": "ILS Mittelfranken Süd"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.0326417,
+              49.3273277
+            ],
+            [
+              11.0329585,
+              49.3273454
+            ],
+            [
+              11.032941,
+              49.3274784
+            ],
+            [
+              11.032774,
+              49.327469
+            ],
+            [
+              11.0327793,
+              49.3274285
+            ],
+            [
+              11.0326295,
+              49.3274201
+            ],
+            [
+              11.0326417,
+              49.3273277
+            ]
+          ]
+        ]
+      },
+      "id": "way/92106335"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/114648297",
+        "addr:city": "Traunstein",
+        "addr:housenumber": "15a",
+        "addr:postcode": "83278",
+        "addr:street": "Gewerbepark Kaserne",
+        "alt_name": "Leitstelle Traunstein",
+        "building": "civic",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Traunstein",
+        "phone": "+49 861 209350-0",
+        "short_name": "ILS Traunstein",
+        "website": "https://www.ils-ts.de/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.6338833,
+              47.8800755
+            ],
+            [
+              12.6341151,
+              47.8801544
+            ],
+            [
+              12.6344095,
+              47.8802547
+            ],
+            [
+              12.6343432,
+              47.8803423
+            ],
+            [
+              12.633817,
+              47.8801632
+            ],
+            [
+              12.6338833,
+              47.8800755
+            ]
+          ]
+        ]
+      },
+      "id": "way/114648297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/132625204",
+        "addr:city": "Ansbach",
+        "addr:country": "DE",
+        "addr:housenumber": "16",
+        "addr:postcode": "91522",
+        "addr:street": "Eyber Straße",
+        "alt_name": "Leitstelle Ansbach",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Ansbach",
+        "short_name": "ILS Ansbach"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.5938777,
+              49.2980346
+            ],
+            [
+              10.5935504,
+              49.2981335
+            ],
+            [
+              10.5934692,
+              49.2980192
+            ],
+            [
+              10.5937965,
+              49.2979203
+            ],
+            [
+              10.5938777,
+              49.2980346
+            ]
+          ]
+        ]
+      },
+      "id": "way/132625204"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/135772143",
+        "addr:city": "Weilheim in Oberbayern",
+        "addr:country": "DE",
+        "addr:housenumber": "5a",
+        "addr:postcode": "82362",
+        "addr:street": "Johannes-Damrich-Straße",
+        "alt_name": "Leitstelle Oberland",
+        "amenity": "fire_station",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Oberland",
+        "short_name": "ILS Oberland",
+        "source": "bing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.1473765,
+              47.8415601
+            ],
+            [
+              11.1474414,
+              47.8415423
+            ],
+            [
+              11.1474307,
+              47.8415247
+            ],
+            [
+              11.1475276,
+              47.8414982
+            ],
+            [
+              11.1475393,
+              47.8415174
+            ],
+            [
+              11.1476932,
+              47.8414753
+            ],
+            [
+              11.1478082,
+              47.8416645
+            ],
+            [
+              11.1474925,
+              47.841751
+            ],
+            [
+              11.1473765,
+              47.8415601
+            ]
+          ]
+        ]
+      },
+      "id": "way/135772143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/148939049",
+        "addr:city": "Rosenheim",
+        "addr:housenumber": "7",
+        "addr:postcode": "83022",
+        "addr:street": "Küpferlingstraße",
+        "alt_name": "Leitstelle Rosenheim",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Rosenheim",
+        "phone": "+49 8031 900900",
+        "short_name": "ILS Rosenheim",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.1157554,
+              47.857809
+            ],
+            [
+              12.1159646,
+              47.8578077
+            ],
+            [
+              12.1159684,
+              47.8580687
+            ],
+            [
+              12.1157592,
+              47.8580701
+            ],
+            [
+              12.1157554,
+              47.857809
+            ]
+          ]
+        ]
+      },
+      "id": "way/148939049"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/197439466",
+        "addr:city": "Amberg",
+        "addr:country": "DE",
+        "addr:housenumber": "19",
+        "addr:postcode": "92224",
+        "addr:street": "Gasfabrikstraße",
+        "building": "yes",
+        "contact:website": "http://www.ils-amberg.de/",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Amberg",
+        "short_name": "ILS Amberg",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.86233,
+              49.44145
+            ],
+            [
+              11.86214,
+              49.4414
+            ],
+            [
+              11.86221,
+              49.44128
+            ],
+            [
+              11.86225,
+              49.44129
+            ],
+            [
+              11.86268,
+              49.4411
+            ],
+            [
+              11.8628,
+              49.44122
+            ],
+            [
+              11.86235,
+              49.44142
+            ],
+            [
+              11.86233,
+              49.44145
+            ]
+          ]
+        ]
+      },
+      "id": "way/197439466"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/203648945",
+        "addr:city": "Straubing",
+        "addr:country": "DE",
+        "addr:housenumber": "21",
+        "addr:postcode": "94315",
+        "addr:street": "Siemensstraße",
+        "alt_name": "Leitstelle Straubing",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Straubing",
+        "operator": "Bayerisches Rotes Kreuz Straubing",
+        "short_name": "ILS Straubing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5787518,
+              48.8698895
+            ],
+            [
+              12.5787371,
+              48.8698904
+            ],
+            [
+              12.5787218,
+              48.8697857
+            ],
+            [
+              12.5788952,
+              48.8697748
+            ],
+            [
+              12.5789104,
+              48.8698795
+            ],
+            [
+              12.5787518,
+              48.8698895
+            ]
+          ]
+        ]
+      },
+      "id": "way/203648945"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/213877685",
+        "addr:city": "Bayreuth",
+        "addr:country": "DE",
+        "addr:housenumber": "6",
+        "addr:postcode": "95445",
+        "addr:street": "An der Feuerwache",
+        "building": "commercial",
+        "contact:email": "leitstelle@brk-bayreuth.de",
+        "contact:phone": "+49 921 79321-200",
+        "contact:website": "http://www.leitstelle-bayreuth.de/",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Bayreuth/Kulmbach",
+        "operator": "Bayerisches Rotes Kreuz Kreisverband Bayreuth",
+        "short_name": "ILS Bayreuth/Kulmbach"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.5663653,
+              49.9505217
+            ],
+            [
+              11.5661302,
+              49.9506143
+            ],
+            [
+              11.5661003,
+              49.9505829
+            ],
+            [
+              11.566039,
+              49.950607
+            ],
+            [
+              11.5659998,
+              49.9505658
+            ],
+            [
+              11.5659065,
+              49.9504676
+            ],
+            [
+              11.566203,
+              49.9503509
+            ],
+            [
+              11.5663653,
+              49.9505217
+            ]
+          ]
+        ]
+      },
+      "id": "way/213877685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/242542634",
+        "addr:housenumber": "4",
+        "addr:street": "Wilhelm-Bachmair-Straße",
+        "alt_name": "Leitstelle Erding",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Erding",
+        "short_name": "ILS Erding",
+        "website": "http://www.ils-erding.de/Start.aspx"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.8927348,
+              48.2956382
+            ],
+            [
+              11.8927411,
+              48.2955461
+            ],
+            [
+              11.892944,
+              48.2955483
+            ],
+            [
+              11.892942,
+              48.295631
+            ],
+            [
+              11.8929417,
+              48.2956409
+            ],
+            [
+              11.8928948,
+              48.2956404
+            ],
+            [
+              11.8928942,
+              48.2956831
+            ],
+            [
+              11.8927889,
+              48.2956824
+            ],
+            [
+              11.8927896,
+              48.295639
+            ],
+            [
+              11.8927348,
+              48.2956382
+            ]
+          ]
+        ]
+      },
+      "id": "way/242542634"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/300071779",
+        "addr:city": "Aschaffenburg",
+        "addr:country": "DE",
+        "addr:housenumber": "21",
+        "addr:postcode": "63739",
+        "addr:street": "Südbahnhofstraße",
+        "building": "fire_station",
+        "designation": "Integrierte Leitstelle Bayerischer Untermain",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Untermain",
+        "short_name": "ILS Untermain"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.143219,
+              49.9656213
+            ],
+            [
+              9.1432392,
+              49.9654969
+            ],
+            [
+              9.1439453,
+              49.9655443
+            ],
+            [
+              9.1439251,
+              49.9656687
+            ],
+            [
+              9.143219,
+              49.9656213
+            ]
+          ]
+        ]
+      },
+      "id": "way/300071779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/308974902",
+        "addr:city": "Ebersdorf b.Coburg",
+        "addr:housenumber": "3",
+        "addr:postcode": "96237",
+        "addr:street": "Frankenring",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Coburg",
+        "short_name": "ILS Coburg"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.0562503,
+              50.222921
+            ],
+            [
+              11.0563033,
+              50.223027
+            ],
+            [
+              11.0559435,
+              50.2231008
+            ],
+            [
+              11.0558904,
+              50.2229948
+            ],
+            [
+              11.0562503,
+              50.222921
+            ]
+          ]
+        ]
+      },
+      "id": "way/308974902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/740763839",
+        "addr:city": "Krumbach (Schwaben)",
+        "addr:country": "DE",
+        "addr:housenumber": "3",
+        "addr:postcode": "86381",
+        "addr:street": "Burgauer Straße",
+        "alt_name": "Leitstelle Donau-Iller",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Donau-Iller",
+        "short_name": "ILS Donau-Iller",
+        "source": "bing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.3699878,
+              48.2452088
+            ],
+            [
+              10.3702208,
+              48.2452336
+            ],
+            [
+              10.3702469,
+              48.2452364
+            ],
+            [
+              10.3702239,
+              48.2453324
+            ],
+            [
+              10.3699648,
+              48.2453049
+            ],
+            [
+              10.3699878,
+              48.2452088
+            ]
+          ]
+        ]
+      },
+      "id": "way/740763839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/375949940",
+        "emergency": "control_centre",
+        "fax": "+49 951 95544-154",
+        "name": "Integrierte Leitstelle Bamberg-Forchheim",
+        "operator": "Zweckverband für Rettungsdienst und Feuerwehralarmierung Bamberg-Forchheim",
+        "phone": "+49 951 95544-0",
+        "short_name": "ILS Bamberg-Forchheim",
+        "website": "https://www.ils-bamberg.de/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8889335,
+          49.8743456
+        ]
+      },
+      "id": "node/375949940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1416923665",
+        "addr:city": "Landshut",
+        "addr:country": "DE",
+        "addr:housenumber": "1",
+        "addr:postcode": "84028",
+        "addr:street": "Sigmund-Schwarz-Straße",
+        "alt_name": "Leitstelle Landshut",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Landshut",
+        "opening_hours": "24/7",
+        "phone": "+49 871 96577150",
+        "short_name": "ILS Landshut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1656578,
+          48.5406684
+        ]
+      },
+      "id": "node/1416923665"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2379427413",
+        "addr:city": "Würzburg",
+        "addr:country": "DE",
+        "addr:housenumber": "3",
+        "addr:postcode": "97070",
+        "addr:street": "Hofstallstraße",
+        "contact:email": "berufsfeuerwehr@stadt.wuerzburg.de",
+        "contact:fax": "+49 931 3090-6120",
+        "contact:phone": "+49 931 3090-60",
+        "contact:website": "https://www.wuerzburg.de/de/themen/umwelt-verkehr/gefahrenabwehr/integrierteleitstelle/15937.Integrierte_Leitstelle_Wuerzburg_-_Unterfrankens_erste_Integrierte_Leitstelle_ging_am_.._in_Betrieb.html",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Würzburg",
+        "short_name": "ILS Würzburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9412046,
+          49.7954118
+        ]
+      },
+      "id": "node/2379427413"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2787252800",
+        "addr:city": "München",
+        "addr:country": "DE",
+        "addr:housenumber": "120",
+        "addr:postcode": "80797",
+        "addr:street": "Heßstraße",
+        "alt_name": "Leitstelle München",
+        "contact:email": "bfm.ils.muenchen@muenchen.de",
+        "contact:website": "https://stadt.muenchen.de/infos/integrierteleitstelle.html",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle München",
+        "short_name": "ILS München",
+        "wikipedia": "de:Feuerwehr München#Integrierte Leitstelle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5554895,
+          48.1562147
+        ]
+      },
+      "id": "node/2787252800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2917756996",
+        "addr:city": "Hof",
+        "addr:country": "DE",
+        "addr:housenumber": "4",
+        "addr:postcode": "95032",
+        "addr:street": "Alsenberg",
+        "email": "leitung.hochfranken@ils.brk.de",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Hochfranken",
+        "operator": "Bayerisches Rotes Kreuz",
+        "phone": "+49 9281 7395 100",
+        "short_name": "ILS Hochfranken"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9297937,
+          50.3028212
+        ]
+      },
+      "id": "node/2917756996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5647179624",
+        "addr:city": "Schweinfurt",
+        "addr:housenumber": "2",
+        "addr:postcode": "97424",
+        "addr:street": "Friedrich-Gauß-Straße",
+        "brand": "Bayerisches Rotes Kreuz",
+        "emergency": "control_centre",
+        "emergency:phone": "112",
+        "name": "Integrierte Leitstelle Schweinfurt",
+        "opening_hours": "24/7",
+        "short_name": "ILS Schweinfurt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2367098,
+          50.0324709
+        ]
+      },
+      "id": "node/5647179624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5647265360",
+        "alt_name": "Leitstelle Nürnberg",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Nürnberg",
+        "short_name": "ILS Nürnberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0669874,
+          49.4074762
+        ]
+      },
+      "id": "node/5647265360"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5647286324",
+        "alt_name": "Leitstelle Regensburg",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Regensburg",
+        "short_name": "ILS Regensburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1158594,
+          49.0133418
+        ]
+      },
+      "id": "node/5647286324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5647292083",
+        "alt_name": "Leitstelle Ingolstadt",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Ingolstadt",
+        "short_name": "ILS Ingolstadt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4284168,
+          48.7691441
+        ]
+      },
+      "id": "node/5647292083"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5647321426",
+        "addr:city": "Augsburg",
+        "addr:country": "DE",
+        "addr:housenumber": "30",
+        "addr:postcode": "86153",
+        "addr:street": "Berliner Allee",
+        "alt_name": "Leitstelle Augsburg",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Augsburg",
+        "short_name": "ILS Augsburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9151495,
+          48.3742189
+        ]
+      },
+      "id": "node/5647321426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5647328046",
+        "addr:city": "Fürstenfeldbruck",
+        "addr:country": "DE",
+        "addr:housenumber": "32",
+        "addr:postcode": "82256",
+        "addr:street": "Münchner Straße",
+        "alt_name": "Leitstelle Fürstenfeldbruck",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Fürstenfeldbruck",
+        "short_name": "ILS Fürstenfeldbruck"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2603495,
+          48.1768307
+        ]
+      },
+      "id": "node/5647328046"
+    }
+  ]
+}

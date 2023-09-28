@@ -1,0 +1,541 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:34:34Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/23048220",
+        "addr:city": "Wetzlar",
+        "addr:country": "DE",
+        "addr:housename": "ZLS Lahn-Dill",
+        "addr:housenumber": "4",
+        "addr:postcode": "35578",
+        "addr:street": "Franz-Schubert-Straße",
+        "alt_name": "Leitstelle Lahn-Dill",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Lahn-Dill",
+        "short_name": "ZLST Lahn-Dill",
+        "url": "http://www.lahn-dill-kreis.de/ldk_internet_standard_7415.html"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5231798,
+              50.5493842
+            ],
+            [
+              8.5230281,
+              50.5492347
+            ],
+            [
+              8.5235026,
+              50.5490402
+            ],
+            [
+              8.5235859,
+              50.5491222
+            ],
+            [
+              8.5234446,
+              50.5491801
+            ],
+            [
+              8.5235131,
+              50.5492476
+            ],
+            [
+              8.5231798,
+              50.5493842
+            ]
+          ]
+        ]
+      },
+      "id": "way/23048220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/279051726",
+        "addr:city": "Bad Hersfeld",
+        "addr:country": "DE",
+        "addr:housenumber": "12",
+        "addr:postcode": "36251",
+        "addr:street": "Friedloser Straße",
+        "alt_name": "Leitstelle Hersfeld-Rotenburg",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Leitstelle Hersfeld-Rotenburg",
+        "short_name": "ZLST Hersfeld-Rotenburg"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.7147338,
+              50.8723135
+            ],
+            [
+              9.7149529,
+              50.8720484
+            ],
+            [
+              9.7154726,
+              50.8722194
+            ],
+            [
+              9.7155251,
+              50.8722367
+            ],
+            [
+              9.7154794,
+              50.872292
+            ],
+            [
+              9.715306,
+              50.8725018
+            ],
+            [
+              9.7147338,
+              50.8723135
+            ]
+          ]
+        ]
+      },
+      "id": "way/279051726"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/534422708",
+        "alt_name": "Leitstelle Limburg-Weilburg",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Limburg-Weilburg",
+        "note": "Adresse: Gartenstraße 1 / Ecke 'Gartenstraße' und 'Im Schlenkert'",
+        "short_name": "ZLST Limburg-Weilburg"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0654867,
+              50.3837669
+            ],
+            [
+              8.0655888,
+              50.3837837
+            ],
+            [
+              8.0655583,
+              50.3838565
+            ],
+            [
+              8.0656903,
+              50.383881
+            ],
+            [
+              8.0655457,
+              50.3842142
+            ],
+            [
+              8.0653114,
+              50.3841728
+            ],
+            [
+              8.0654867,
+              50.3837669
+            ]
+          ]
+        ]
+      },
+      "id": "way/534422708"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2321103631",
+        "alt_name": "Leitstelle Wetterau",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Wetterau",
+        "short_name": "ZLST Wetterau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7747001,
+          50.325039
+        ]
+      },
+      "id": "node/2321103631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4946171826",
+        "addr:housenumber": "4",
+        "addr:postcode": "64646",
+        "addr:street": "Werlestraße",
+        "alt_name": "Leitstelle Bergstraße",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Bergstraße",
+        "operator": "Kreis Bergstraße",
+        "phone": "+49 6252 99700",
+        "service_times": "24/7",
+        "short_name": "ZLST Bergstraße",
+        "website": "https://www.leitstelle-bergstrasse.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6424461,
+          49.6411525
+        ]
+      },
+      "id": "node/4946171826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4980298992",
+        "alt_name": "Leitstelle Gießen",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Gießen",
+        "short_name": "ZLST Gießen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6700157,
+          50.588553
+        ]
+      },
+      "id": "node/4980298992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5034622812",
+        "alt_name": "Leitstelle Rheingau-Taunus",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Rheingau-Taunus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0736899,
+          50.1481939
+        ]
+      },
+      "id": "node/5034622812"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5040961203",
+        "alt_name": "Leitstelle Wiesbaden",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Wiesbaden",
+        "short_name": "ZLST Wiesbaden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2185916,
+          50.0794054
+        ]
+      },
+      "id": "node/5040961203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5601799018",
+        "alt_name": "Leitstelle Darmstadt",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Darmstadt",
+        "short_name": "ZLST Darmstadt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.640959,
+          49.8742793
+        ]
+      },
+      "id": "node/5601799018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5601810550",
+        "alt_name": "Leitstelle Darmstadt-Dieburg",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Darmstadt-Dieburg",
+        "short_name": "ZLST Darmstadt-Dieburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8459817,
+          49.894897
+        ]
+      },
+      "id": "node/5601810550"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5601824728",
+        "alt_name": "Leitstelle Frankfurt am Main",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Frankfurt am Main",
+        "short_name": "ZLST Frankfurt am Main"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6902848,
+          50.1446419
+        ]
+      },
+      "id": "node/5601824728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5601857779",
+        "alt_name": "Leitstelle Fulda",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Fulda",
+        "short_name": "ZLST Fulda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6638757,
+          50.5476628
+        ]
+      },
+      "id": "node/5601857779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5601899316",
+        "alt_name": "Leitstelle Groß-Gerau",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Groß-Gerau",
+        "short_name": "ZLST Groß-Gerau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4792399,
+          49.912307
+        ]
+      },
+      "id": "node/5601899316"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5601927018",
+        "alt_name": "Leitstelle Kassel",
+        "emergency": "control_centre",
+        "level": "1",
+        "name": "Zentrale Leitstelle Kassel",
+        "short_name": "ZLST Kassel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.498623,
+          51.3210397
+        ]
+      },
+      "id": "node/5601927018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5601962449",
+        "alt_name": "Leitstelle Main-Taunus",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Main-Taunus",
+        "short_name": "ZLST Main-Taunus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4617123,
+          50.0911628
+        ]
+      },
+      "id": "node/5601962449"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5601962450",
+        "addr:city": "Gelnhausen",
+        "addr:housenumber": "34",
+        "addr:postcode": "63571",
+        "addr:street": "Frankfurter Straße",
+        "alt_name": "Leitstelle Main-Kinzig",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Main-Kinzig-Kreis",
+        "short_name": "ZLST Main-Kinzig"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1754738,
+          50.2052174
+        ]
+      },
+      "id": "node/5601962450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5601974736",
+        "alt_name": "Leitstelle Odenwald",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Odenwald",
+        "short_name": "ZLST Odenwald"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.9940557,
+          49.6624318
+        ]
+      },
+      "id": "node/5601974736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5616614184",
+        "alt_name": "Leitstelle Vogelsberg",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Vogelsberg",
+        "short_name": "ZLST Vogelsberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3992916,
+          50.6407545
+        ]
+      },
+      "id": "node/5616614184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5616614187",
+        "alt_name": "Leitstelle Dietzenbach",
+        "emergency": "control_centre",
+        "level": "1",
+        "name": "Zentrale Leitstelle Kreis Offenbach",
+        "short_name": "ZLST Dietzenbach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7994177,
+          50.0208346
+        ]
+      },
+      "id": "node/5616614187"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5616627838",
+        "alt_name": "Leitstelle Waldeck-Frankenberg",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Waldeck-Frankenberg",
+        "short_name": "ZLST Waldeck-Frankenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8566075,
+          51.2690466
+        ]
+      },
+      "id": "node/5616627838"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5616637807",
+        "addr:city": "Eschwege",
+        "addr:country": "DE",
+        "addr:housenumber": "15a",
+        "addr:postcode": "37269",
+        "addr:street": "Bahnhofstraße",
+        "alt_name": "Leitstelle Werra-Meißner",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Werra-Meißner",
+        "short_name": "ZLST Werra-Meißner"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0482033,
+          51.1920924
+        ]
+      },
+      "id": "node/5616637807"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5765383638",
+        "alt_name": "Leitstelle Odenwald",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Odenwald",
+        "short_name": "ZLST Odenwald"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.9933284,
+          49.6628937
+        ]
+      },
+      "id": "node/5765383638"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5769897116",
+        "addr:housenumber": "1",
+        "addr:street": "Hans-Scholl-Straße",
+        "alt_name": "Leitstelle Schwalm-Eder",
+        "emergency": "control_centre",
+        "name": "Zentrale Leitstelle Schwalm-Eder",
+        "short_name": "ZLST Schwalm-Eder"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.4126497,
+          51.0164342
+        ]
+      },
+      "id": "node/5769897116"
+    }
+  ]
+}

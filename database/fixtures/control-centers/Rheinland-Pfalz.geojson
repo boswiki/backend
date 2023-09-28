@@ -1,0 +1,192 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-09-28T06:35:36Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/525602876",
+        "addr:city": "Mainz",
+        "addr:country": "DE",
+        "addr:housenumber": "6",
+        "addr:postcode": "55116",
+        "addr:street": "Mitternachtsgasse",
+        "alt_name": "Leitstelle Mainz",
+        "building": "yes",
+        "emergency": "control_centre",
+        "name": "Rettungsleitstelle Mainz",
+        "short_name": "ILS Mainz"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.272215,
+              50.0036656
+            ],
+            [
+              8.2721552,
+              50.003769
+            ],
+            [
+              8.272052,
+              50.0037443
+            ],
+            [
+              8.2721117,
+              50.003641
+            ],
+            [
+              8.272215,
+              50.0036656
+            ]
+          ]
+        ]
+      },
+      "id": "way/525602876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4945654045",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Bad Kreuznach",
+        "operator": "DRK Rettungsdienst Rheinhessen-Nahe gGmbH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8643106,
+          49.8485146
+        ]
+      },
+      "id": "node/4945654045"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5647461763",
+        "alt_name": "Leitstelle Koblenz",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Koblenz",
+        "short_name": "ILst Koblenz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5811691,
+          50.3647631
+        ]
+      },
+      "id": "node/5647461763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5647464227",
+        "addr:city": "Landau in der Pfalz",
+        "addr:housenumber": "4a",
+        "addr:postcode": "76829",
+        "addr:street": "Haardtstraße",
+        "alt_name": "Leitstelle Südpfalz",
+        "emergency": "control_centre",
+        "government": "rescue",
+        "name": "Integrierte Leitstelle Landau",
+        "office": "government",
+        "short_name": "ILS Südpfalz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.116338,
+          49.2023057
+        ]
+      },
+      "id": "node/5647464227"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719519930",
+        "alt_name": "Leitstelle Kaiserslautern",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Kaiserslautern",
+        "short_name:de": "ILS Kaiserslautern"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7416643,
+          49.4392242
+        ]
+      },
+      "id": "node/5719519930"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5734119151",
+        "alt_name": "Rettungsleitstelle Montabaur",
+        "contact:email": "info@leitstelle-montabaur.de",
+        "contact:fax": "+49 2602 914-333",
+        "contact:phone": "+49 2602 914-0",
+        "contact:website": "http://leitstelle-montabaur.de",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Montabaur",
+        "operator": "DRK Rettungsdienst Rhein-Lahn-Westerwald gGmbH",
+        "short_name": "ILS Montabaur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8316171,
+          50.4372634
+        ]
+      },
+      "id": "node/5734119151"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5736323161",
+        "alt_name": "Leitstelle Ludwigshafen",
+        "emergency": "control_centre",
+        "name": "Integrierte Leitstelle Ludwigshafen",
+        "short_name": "ILS Ludwigshafen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4179655,
+          49.4600834
+        ]
+      },
+      "id": "node/5736323161"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5856779115",
+        "alt_name": "Rettungsleitstelle Trier",
+        "description:de": "Einsatzleitstelle Feuerwehr und Rettungsdienst",
+        "description:en": "public-safety answering point region Trier",
+        "emergency": "control_centre",
+        "loc_name": "Leitstelle Trier",
+        "name": "Integrierte Leitstelle Trier",
+        "operator": "Stadt Trier;DRK-Landesverband Rheinland-Pfalz e.V.",
+        "short_name": "ILst Trier"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6291051,
+          49.7469191
+        ]
+      },
+      "id": "node/5856779115"
+    }
+  ]
+}
