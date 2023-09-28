@@ -27,7 +27,8 @@ class ControlCenterController extends Controller
         return ControlCenterResource::make(
             $controlCenter->load(
                 'district:id,name',
-                'address:id,number,street,city,addressable_id,addressable_type'
+                'address:id,number,street,city,addressable_id,addressable_type',
+                'stations:id,name,control_center_id'
             )
         );
     }

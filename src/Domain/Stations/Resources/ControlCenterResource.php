@@ -23,7 +23,8 @@ class ControlCenterResource extends JsonResource
             'address' => AddressResource::make($this->address),
             'district' => [
                 'name' => $this->district->name
-            ]
+            ],
+            'stations' => $this->stations
         ];
     }
 }
