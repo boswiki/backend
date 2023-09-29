@@ -28,11 +28,12 @@ class StationController extends Controller
                         'location',
                         $point = new Point($station->location->latitude, $station->location->longitude, 4326),
                         '<',
-                        5000
+                        8000
                     )
                     ->withDistanceSphere('location', $point, 'distanceInMeters')
                     ->orderByDistance('location', $point, 'asc')
                     ->where('id', '!=', $station->id)
+                    ->limit(10)
                     ->get()
         ]);
     }
