@@ -34,6 +34,7 @@ class CategoryAndStationTypeSeeder extends Seeder
                 'Kriminalpolizeiinspektion',
                 'Autobahnpolizeiwache',
                 'Bereitschaftspolizei',
+                'Polizeikommissariat'
             ],
             'Technisches Hilfswerk' => [
                 'THW-Ortsverband',
