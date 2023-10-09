@@ -13,7 +13,12 @@ class StationController extends Controller
 {
     public function index(Request $request)
     {
-        return StationIndexResource::collection(Station::query()->paginate(30));
+        return StationIndexResource::collection(
+            Station::query()
+                ->select('id', 'name', 'created_at', 'status')
+                ->with('address')
+                ->paginate(30)
+        );
     }
 
     public function show(Request $request, Station $station)
