@@ -24,7 +24,13 @@ class StationController extends Controller
     public function show(Request $request, Station $station)
     {
         return StationResource::make(
-            $station->load('author', 'district', 'address', 'stationType', 'controlCenter')
+            $station->load(
+                'author:id,first_name,last_name',
+                'district:id,name',
+                'address',
+                'stationType:id,name',
+                'controlCenter:id,name'
+            )
         )->additional([
             'nearbyStations' =>
                 Station::query()
