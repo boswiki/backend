@@ -20,6 +20,7 @@ class StationResource extends JsonResource
             'longitude' => $this->location->longitude,
             'createdAt' => $this->created_at?->diffForHumans(),
             'description' => $this->description,
+            'osmId' => $this->osm_id,
 
             // RELATIONS
             'address' => AddressResource::make($this->address),
