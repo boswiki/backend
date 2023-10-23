@@ -2,6 +2,8 @@
 
 namespace App\Api\Controllers;
 
+use App\Actions\Stations\ListStations;
+use App\Actions\Stations\ShowStation;
 use App\Controller;
 use Domain\Stations\Models\Station;
 use Domain\Stations\Resources\StationIndexResource;
@@ -11,41 +13,13 @@ use MatanYadaev\EloquentSpatial\Objects\Point;
 
 class StationController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request, ListStations $action)
     {
-        return StationIndexResource::collection(
-            Station::query()
-                ->select('id', 'name', 'created_at', 'status')
-                ->with('address')
-                ->paginate(30)
-        );
+        return $action->execute($request);
     }
 
-    public function show(Request $request, Station $station)
+    public function show(Station $station, ShowStation $action): StationResource
     {
-        return StationResource::make(
-            $station->load(
-                'author:id,first_name,last_name',
-                'district:id,name',
-                'address',
-                'stationType:id,name',
-                'controlCenter:id,name'
-            )
-        )->additional([
-            'nearbyStations' =>
-                Station::query()
-                    ->select('id', 'name')
-                    ->whereDistance(
-                        'location',
-                        $point = new Point($station->location->latitude, $station->location->longitude, 4326),
-                        '<',
-                        8000
-                    )
-                    ->withDistanceSphere('location', $point, 'distanceInMeters')
-                    ->orderByDistance('location', $point, 'asc')
-                    ->where('id', '!=', $station->id)
-                    ->limit(10)
-                    ->get()
-        ]);
+        return $action->execute($station);
     }
 }
