@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Actions\Stations;
+namespace Domain\Stations\Actions;
 
 use Domain\Stations\Models\Station;
 use Domain\Stations\Resources\StationResource;
 use MatanYadaev\EloquentSpatial\Objects\Point;
 
 class ShowStation {
-    public function execute(Station $station)
+    public function execute(Station $station): StationResource
     {
         return StationResource::make(
             $station->load(

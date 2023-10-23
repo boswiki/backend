@@ -1,17 +1,16 @@
 <?php
 
-namespace App\Actions\Stations;
+namespace Domain\Stations\Actions;
 
 use Domain\Stations\Models\Station;
 use Domain\Stations\Resources\StationIndexResource;
-use Illuminate\Database\Query\Builder;
 use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Support\Facades\Pipeline;
-use MatanYadaev\EloquentSpatial\SpatialBuilder;
 
 class ListStations
 {
-    public function execute(Request $request)
+    public function execute(Request $request): AnonymousResourceCollection
     {
         return StationIndexResource::collection(
             Pipeline::send(

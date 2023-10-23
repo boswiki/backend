@@ -25,7 +25,6 @@ class StationResource extends JsonResource
             // RELATIONS
             'address' => AddressResource::make($this->address),
             'stationType' => StationTypeResource::make($this->stationType),
-            'vehicles' => $this->vehicles,
             'controlCenter' => $this->controlCenter,
             'district' => $this->district,
             'author' => UserResource::make($this->author),

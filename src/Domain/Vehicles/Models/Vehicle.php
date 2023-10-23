@@ -65,8 +65,8 @@ class Vehicle extends Model
         return $this->belongsTo(VehicleManufacturer::class);
     }
 
-    public function vehicleType(): HasOne
+    public function vehicleType(): BelongsTo
     {
-        return $this->hasOne(VehicleType::class);
+        return $this->belongsTo(VehicleType::class);
     }
 }

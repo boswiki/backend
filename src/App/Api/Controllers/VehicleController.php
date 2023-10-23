@@ -7,15 +7,12 @@ use Domain\Stations\Actions\ListStations;
 use Domain\Stations\Actions\ShowStation;
 use Domain\Stations\Models\Station;
 use Domain\Stations\Resources\StationResource;
-use Domain\Vehicles\Actions\ListVehicles;
 use Domain\Vehicles\Models\Vehicle;
-use Domain\Vehicles\Resources\VehicleResource;
 use Illuminate\Http\Request;
-use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
-class StationController extends Controller
+class VehicleController extends Controller
 {
-    public function index(Request $request, ListStations $action): AnonymousResourceCollection
+    public function index(Request $request, ListVehicles $action)
     {
         return $action->execute($request);
     }
@@ -26,9 +23,11 @@ class StationController extends Controller
     }
 
     // ADDITIONAL ROUTES
-    // TODO may be moved into VehicleController eventually
-    public function vehicles(string $stationId, ListVehicles $action): AnonymousResourceCollection
+    public function vehicles(Request $request, $stationId)
     {
-        return $action->execute($stationId);
+        return Vehicle::query()
+            ->with(['vehicleFitter', 'vehicleManufacturer', 'vehicleType'])
+            ->where('station_id', $stationId)
+            ->get();
     }
 }
