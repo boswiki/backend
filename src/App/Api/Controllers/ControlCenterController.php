@@ -17,7 +17,7 @@ class ControlCenterController extends Controller
             District::query()
                 ->select('id', 'name')
                 ->whereType(\Domain\Stations\Enums\AdministrativeDivision::STATE->value)
-                ->with('controlCenters:id,district_id,name')
+                ->with('controlCenters:id,district_id,name,location')
                 ->get()
         );
     }
