@@ -20,12 +20,8 @@ class StatisticsController extends Controller
         return [
             ['name' => 'Wachen', 'value' => Station::query()->count()],
             ['name' => 'Leitstellen', 'value' => ControlCenter::query()->count()],
-            ['name' => 'Adressen', 'value' => Address::query()->count()],
-            ['name' => 'Bundesländer & Landkreise', 'value' => District::query()->count()],
-            ['name' => 'Nutzer', 'value' => User::query()->count()],
             ['name' => 'Fahrzeuge', 'value' => Vehicle::query()->count()],
-            ['name' => 'Organisationen', 'value' => Organisation::query()->count()],
-            ['name' => 'Kategorien', 'value' => Category::query()->count()],
+            ['name' => 'Nutzer', 'value' => User::query()->count()]
         ];
     }
 }

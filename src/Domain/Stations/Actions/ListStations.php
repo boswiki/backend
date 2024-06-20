@@ -19,7 +19,7 @@ class ListStations
                     ->with('address')
             )
                 ->through([
-                    \App\Filters\ByName::class
+                    \App\Filters\ByName::class,
                 ])
                 ->thenReturn()
                 ->paginate(30)
