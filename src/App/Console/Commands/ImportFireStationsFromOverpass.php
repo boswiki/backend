@@ -143,13 +143,11 @@ class ImportFireStationsFromOverpass extends Command
             'Rettung' => 'Rettungswache',
         ];
 
-        foreach ($stationTypeLookup as $key => $value) {
-            if (Str::startsWith($name, $key)) {
-                return $value;
-            }
-        }
+        $result = array_filter($stationTypeLookup, function ($value, $key) use ($name) {
+            return Str::startsWith($name, $key);
+        }, ARRAY_FILTER_USE_BOTH);
 
-        return 'AUTO_IMPORT_STATION_TYPE';
+        return ! empty($result) ? reset($result) : 'AUTO_IMPORT_STATION_TYPE';
     }
 
     protected function createAddressForStation(Station $station, array $properties): void
