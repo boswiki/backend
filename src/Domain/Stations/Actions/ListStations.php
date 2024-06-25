@@ -15,7 +15,7 @@ class ListStations
         return StationIndexResource::collection(
             Pipeline::send(
                 Station::query()
-                    ->select('id', 'name', 'created_at', 'status')
+                    ->select('id', 'name', 'created_at', 'status', 'location')
                     ->with('address')
             )
                 ->through([

@@ -3,11 +3,7 @@
 namespace App\Api\Controllers;
 
 use App\Controller;
-use Domain\Common\Models\Address;
-use Domain\Common\Models\Category;
-use Domain\Common\Models\Organisation;
 use Domain\Stations\Models\ControlCenter;
-use Domain\Stations\Models\District;
 use Domain\Stations\Models\Station;
 use Domain\Users\Models\User;
 use Domain\Vehicles\Models\Vehicle;
@@ -21,7 +17,7 @@ class StatisticsController extends Controller
             ['name' => 'Wachen', 'value' => Station::query()->count()],
             ['name' => 'Leitstellen', 'value' => ControlCenter::query()->count()],
             ['name' => 'Fahrzeuge', 'value' => Vehicle::query()->count()],
-            ['name' => 'Nutzer', 'value' => User::query()->count()]
+            ['name' => 'Nutzer', 'value' => User::query()->count()],
         ];
     }
 }
